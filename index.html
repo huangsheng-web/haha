@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css"/>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/animate.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/my.css"/>
+		<style type="text/css">
+			html,
+			body {
+			  width: 100%;
+			  font-size: .16rem;
+			  color: #333333;
+			  overflow: hidden!important;
+			}
+			html {
+			  font-size: 100px;
+			}    				
+			.page1{
+				width: 100%;
+				height: 100%;
+				background: url(images/index_bg_1.jpg) no-repeat;
+				background-size: cover;
+				background-position: center;
+				display: none;
+			}
+			.page2{
+				width: 100%;
+				height: 100%;
+				background: url(images/index_bg_2.jpg) no-repeat;
+				background-size:cover;
+				background-position: center;
+				display: none;			
+			}			
+			.page3{
+				width: 100%;
+				height: 100%;
+				background: url(images/index_bg_3.jpg) no-repeat;
+				background-size:cover;
+				background-position: center;
+				display: none;
+			}	
+			.page4{
+				width: 100%;
+				height: 100%;
+				background: url(images/index_bg_4.jpg) no-repeat;
+				background-size:cover;
+				background-position: center;
+				display: none;
+			}			
+			.page5{
+				width: 100%;
+				height: 100%;
+				background: url(images/index_bg_5.jpg) no-repeat;
+				background-size:cover;
+				background-position: center;
+				display: none;
+			}	
+			.page6{
+				width: 100%;
+				height: 7.0rem;
+				display: none;
+				margin-top: 1rem;
+			}
+			.page6_main{
+				height: 6.4rem;				
+			}
+			.page6_main li{
+				text-align: center;
+			}
+			.page6_title{
+				font-family: serif;
+			    font-size: .31rem;
+			    font-weight: 900;
+			    letter-spacing: .03rem;
+			}
+			.page6_subTitle{
+				font-family: "微软雅黑";
+				font-size: .24rem;	
+				line-height: .5rem;
+				letter-spacing:.05rem;		
+			}
+			.page6_about_des{
+				font-family: "微软雅黑";
+				font-size: .18rem;
+				line-height: 1rem;
+			}
+			.page6_about_btn,.page6_mall_btn{
+				font-family: "微软雅黑";
+				font-size: .18rem;
+			}
+			.page6_about_img,.page6_mall_img{
+				width: 100%;
+				height: 2.2rem;
+				overflow: hidden;
+				cursor: pointer;
+			}
+			.page6_about_img img,.page6_mall_img img{
+				width: 120%;
+				height: 120%;
+			}
+
+			.main-nav{
+				width: 100%;
+				height: 0.74rem;
+				background: #FFFFFF;
+				position: fixed;
+				top: -0.74rem;
+				z-index: 20;
+				padding-left: 2.6rem;
+			}
+    
+			.page1_mask{
+				width: 100%;
+				height: 100%;
+				background: url(images/index_bg1_mask.png)no-repeat;
+				background-size:cover;
+				background-position: center;
+				position: relative;
+				top: 0;
+			}		
+			.linkList{
+				position: absolute;
+				bottom: .34rem;
+				left: 0;
+				right: 0;
+				margin: auto;
+				width: 13.26rem;
+				height: .74rem;
+				display: flex;
+			}
+			.linkList li{
+				flex: 1;
+				text-align: center;
+				line-height: 0.74rem;
+			}
+			.linkList a{
+				font-size: .20rem;
+				text-decoration: none;
+				display: block;
+			    width: 100%;
+			    height: 100%;			    
+			}
+			.linkList a img{
+				width: auto;
+				height: 100%;
+			}
+			.page2_mask{
+				width: 100%;
+				height: 100%;
+				background-image: url(images/index_bg2_mask.png);
+				background-size:cover;
+				background-position: center;
+				position: relative;
+			}
+			.page2_content,.page3_content,.page4_content,.page5_content{
+				margin-top: 1.84rem;
+				height: 7.22rem;
+			}		
+			.page2_content h4,.page3_content h4,.page4_content h4,.page5_content h4{
+				height: 1.06rem;
+				line-height: 1.06rem;
+				font-size: .44rem;
+				font-family:simsun;
+				font-weight: 900;
+			}
+			.page2_des,.page3_des,.page4_des,.page5_des{
+				margin-top: .6rem;
+				
+			}
+			.page2_des p,.page3_des p,.page4_des p,.page5_des p{
+				font-family:"微软雅黑";
+				font-size: .21rem;
+				height: .6rem;
+				line-height: .6rem;
+				display: none;
+			}
+			.page2_content h5,.page3_content h5,.page4_content h5,.page5_content h5{
+				height: 0.6rem;
+				line-height: 0.6rem;
+				font-size: .32rem;
+				font-family:simsun;
+				display: none;
+			}	
+			.page2_btns,.page3_btns,.page4_btns,.page5_btns{
+				margin-top: 1.5rem;
+				height: .52rem;
+				display: none;
+			}	
+			.page2_btns a,.page3_btns a,.page4_btns a,.page5_btns a,.page6_about_btn a,.page6_mall_btn a{
+				width: 1.54rem;
+				height: .5rem;
+				display: inline-block;
+				border: 1px solid #a7d340;
+				text-decoration: none;
+				text-align: center;
+				line-height: .5rem;
+				border-radius: .2rem;
+				color: #a7d340;
+				margin-right: .6rem;
+			}
+			.page6_about_btn a,.page6_mall_btn a{
+				margin-right: 0;
+			}	
+			.page2_btns a:hover,.page3_btns a:hover,.page4_btns a:hover,.page5_btns a:hover,.page6_about_btn a:hover,.page6_mall_btn a:hover{
+				color: #FFFFFF;
+				background: #A7D340;
+			}
+			.page3_mask{
+				width: 100%;
+				height: 100%;
+				background-image: url(images/index_bg3_mask.png);
+				background-size:cover;
+				background-position: center;
+				position: relative;
+			}		
+			.page4_mask{
+				width: 100%;
+				height: 100%;
+				background-image: url(images/index_bg4_mask.png);
+				background-size:cover;
+				background-position: center;
+				position: relative;
+			}		
+			.page5_mask{
+				width: 100%;
+				height: 100%;
+				background-image: url(images/index_bg5_mask.png);
+				background-size:cover;
+				background-position: center;
+				position: relative;
+			}	
+			.wap_nav{
+				position: fixed;
+				top: 0;
+				right: 0;
+				width: 2.7rem;
+				height: 1.8rem;
+				z-index: 20;
+			}	
+			.wap_nav_link{
+				width: 1.46rem;
+				height: 1.8rem;
+				position: absolute;
+				right: 0;
+				background: #8ac400;
+				cursor: pointer;
+			}	
+			.wap_nav_logo{
+				width: 1rem;
+				height: .5rem;
+				margin: .32rem auto;
+				background: url(images/wIndex_logo.png)no-repeat center;
+				background-size:100% 100%;
+				
+			}	
+			.handle{
+				width: 40%;
+				height: .05rem;
+				margin: .18rem 30%;
+				background: #FFFFFF;
+			    transition: all 180ms cubic-bezier(1, 1, 1, 1);
+			    transition-timing-function: cubic-bezier(1, 1, 1, 1);				
+			}	
+			.wap_nav_link .closeBtn:nth-of-type(2) {
+			    transform: translateY(.2rem) rotate(-45deg);
+			}			
+			.wap_nav_link .closeBtn {
+			    transform: translateY(-.23rem)  rotate(45deg);
+			}
+			.wap_nav_link .closeBtn:nth-of-type(3) {
+			    opacity: 0;
+			}
+			.wap_nav_list{
+				position: absolute;
+				top: 1.8rem;
+				right: -2.7rem;
+				width: 100%;
+				height: 9.0rem;
+				z-index: -1;
+			}	
+			.wap_nav_list ul{
+				width: 100%;
+				height: 100%;
+				background: #8ac400;				
+			}			
+			.wap_nav_list ul li{
+				font-family: simsun;
+				font-size: .48rem;
+				text-align: center;
+				height: 1.12rem;
+				line-height: 1.12rem;
+			}	
+			.wap_nav_list ul li a{
+				color: #FFFFFF;
+				text-decoration: none;
+			}	
+			.pack{
+				position: absolute;
+			    bottom: .34rem;
+			    left: 0;
+			    right: 0;
+			    z-index: 20;
+			}
+			.packBtn{
+				width: .48rem;
+				height: .6rem;
+				margin: auto;
+				cursor: pointer;
+			}
+			.wPage2_content,.wPage3_content,.wPage4_content,.wPage5_content{
+				text-align: center;
+				margin-top: 2rem;
+				font-family: simsun;
+			}
+			.wPage2_content h4,.wPage3_content h4,.wPage4_content h4,.wPage5_content h4{
+				height: 1.06rem;
+				line-height: 1.06rem;
+				font-size: .48rem;
+				text-align: center;
+			}
+			.wPage2_des,.wPage3_des,.wPage4_des,.wPage5_des{
+				margin-top: .6rem;
+				display: none;
+			}
+			.wPage2_des p,.wPage3_des p,.wPage4_des p,.wPage5_des p{
+				font-family: simsun;
+				font-size: .30rem;
+				height: .6rem;
+				line-height: .6rem;
+			}
+			.wPage2_btns,.wPage3_btns,.wPage4_btns,.wPage5_btns{
+				margin-top: 3.5rem;
+				height: 1.06rem;
+				display: flex;
+			}
+			.wPage2_btns div,.wPage3_btns div,.wPage4_btns div,.wPage5_btns div{
+				flex: 1;
+				text-align: center;
+				display: none;
+			}	
+			.wPage2_btns a,.wPage3_btns a,.wPage4_btns a,.wPage5_btns a{
+				width: 3.6rem;
+				height: 1.06rem;
+				display: inline-block;
+				border: 1px solid #a7d340;
+				text-decoration: none;
+				text-align: center;
+				line-height: 1.06rem;
+				border-radius: .46rem;
+				color: #a7d340;
+				font-size: .42rem;
+				/*margin-right: .6rem;*/
+			}
+			.wPage2_btns div{
+				
+			}
+			.wPage2_btns a:hover,.wPage3_btns a:hover,.wPage4_btns a:hover,.wPage5_btns a:hover,.page6_about_btn a:hover,.page6_mall_btn a:hover{
+				color: #FFFFFF;
+				background: #A7D340;
+			}
+	
+			.wPage6{
+				width: 100%;
+				height: 100%;
+			}		
+			.wPage6_main{
+				height: 7rem;
+    			margin-top: 2.3rem;
+			}
+			.wPage6_main li{
+				margin-top: .7rem;
+				height: 2.5rem;
+			}
+			.wPage6_about_img{
+				height: 2.5rem;
+				overflow: hidden;
+				/*background: url(images/index_about_bg.jpg)no-repeat;
+				background-size: 100% 100%;*/
+			}
+			.wPage6_mall_img{
+				height: 2.5rem;
+				overflow: hidden;
+				/*background: url(images/index_mall_bg.jpg)no-repeat;	
+				background-size: 100% 100%;				*/
+			}
+			.wPage6_about_img img,.wPage6_mall_img img{
+				width: 100%;
+				height: 100%;
+			}
+			.wPage6_title{
+				font-size: .44rem;
+				text-align: center;
+				font-family: serif;
+			    font-weight: 900;
+			    letter-spacing: .03rem;
+			}
+			.wPage6_subTitle{
+				font-family: "微软雅黑";
+				font-size: .40rem;
+				letter-spacing: .05rem;
+				line-height: .7rem;
+				text-align: center;
+			}
+			.wPage6_btn a{
+				display: block;
+				text-align: center;
+			}
+			.packBtn1 a{
+				width: .16rem;
+				height: .23rem;
+				margin: 0 auto;
+			}
+			@media only screen and (min-width: 325px) and (max-width: 980px) {
+				.bottom_logo img{
+					width: 2rem;
+				}	
+				.bottom_logo p{
+					font-size: .34rem;
+				}	
+			}
+		</style>
+	</head>
+	<body >
+		<header class="main-nav hidden-md hidden-sm">
+			<div class="main-nav-logo"><img style="vertical-align: middle;width: 80%;height: auto;" src="images/brand_logo.png"/></div>
+			<ul>
+					<li><a href="product.html?page=0">烧烤炉</a></li>
+					<li><a href="product.html?page=1">烧烤配件</a></li>
+					<li><a href="product.html?page=2">户外用品</a></li>
+					<li><a href="skills.html">技巧</a></li>
+					<li><a href="recipes.html">食谱</a></li>
+					<li><a href="brand.html">品牌</a></li>
+					<li><a href="mallLink.html">商城</a></li>
+					<li><a href="contact.html">联系我们</a></li>	
+			</ul>
+		</header>	
+		<div class="wap_nav hidden-lg">
+			<div class="wap_nav_link">
+				<div class="wap_nav_logo"></div>
+				<div class="handle"></div>
+				<div class="handle"></div>
+				<div class="handle"></div>
+			</div>
+			<div class="wap_nav_list">
+				<ul>
+					<li><a href="product.html?page=0">烧烤炉</a></li>
+					<li><a href="product.html?page=1">烧烤配件</a></li>
+					<li><a href="product.html?page=2">户外用品</a></li>
+					<li><a href="skills.html">技巧</a></li>
+					<li><a href="recipes.html">食谱</a></li>
+					<li><a href="brand.html">品牌</a></li>
+					<li><a href="mallLink.html">商城</a></li>
+					<li><a href="contact.html">联系我们</a></li>			
+				</ul>	
+			</div>
+		</div>		
+		<div id="dowebok">
+		    <div class="section container ">
+		    	<div class="page1 ">
+			    	<div class="page1_mask">
+						<ul class="linkList hidden-md hidden-sm">
+							<li><a href="product.html?page=0">烧烤炉</a></li>
+							<li><a href="product.html?page=1">烧烤配件</a></li>
+							<li><a href="product.html?page=2">户外用品</a></li>
+							<li><a href="skills.html">技巧</a></li>
+							<li class="packBtn1"><a href="javascript:;"><img src="images/link04.gif"/></a></li>				
+							<li><a href="recipes.html">食谱</a></li>
+							<li><a href="brand.html">品牌</a></li>
+							<li><a href="mallLink.html">商城</a></li>
+							<li><a href="contact.html">联系我们</a></li>							
+						</ul>	
+		    		</div>	    		
+		    	</div>
+		    </div> 
+		    <div class="section container">
+		    	<div class="page2">
+			        <div class="page2_mask">	
+						<div class="page2_content col-lg-5 col-lg-offset-2 hidden-md hidden-sm hidden-xs">
+							<h4>原始人，最自然纯粹的味道。</h4>
+							<h5>原始人孜孜不倦追求最纯粹的烧烤美味。</h5>
+							<div class="page2_des">
+								<p>我们研发特殊导热性材料，对火候进行完美把控。</p>
+								<p>我们使用天然胡桃木炭，确保烧烤天然风味。</p>
+								<p>我们的烧烤调料，由厨师团队精心调配。</p>
+								<p>只为了，还原舌尖最原始的美好。</p>
+							</div>
+							<div class="page2_btns">
+								<a href="product.html?page=0">烤架</a><a href="recipes.html">食谱</a><a href="skills_detail1.html" class="hidden-md hidden-sm hidden-xs">小贴士</a>
+							</div>
+						</div>
+						<div class="wPage2_content hidden-lg col-md-12 col-sm-12">
+							<h4>原始人，最自然纯粹的味道。</h4>
+							<div class="wPage2_des">
+								<p>我们研发特殊导热材质，做到完美的火候，</p>
+								<p>使用天然胡桃木炭，确保烧烤天然风味，</p>
+								<p>厨师团队精心配制烧烤调料，</p>
+								<p>只为了，还原舌尖最原始的美好。</p>
+							</div>
+							<div class="wPage2_btns">
+								<div><a href="product.html?page=0">烤架</a></div>
+								<div><a href="recipes.html">食谱</a></div>
+							</div>
+						</div>						
+			        </div>		    		
+		    	</div>
+		    </div>	    
+		    <div class="section container">
+		    	<div class="page3">
+			        <div class="page3_mask">
+						<div class="page3_content  col-lg-5 col-lg-offset-2 hidden-md hidden-sm hidden-xs">
+							<h4 class="">原始人，最自然纯粹的快乐。 </h4>
+							<h5 class="">原始人，寻找最简单的快乐方式。 </h5>
+							<div class="page3_des ">
+								<p>烧烤发出的滋滋声，啤酒上升的气泡，   </p>
+								<p>手间传递的烤串，朋友弯弯的眼角，</p>
+								<p>爽朗欢快的笑声，彼此融洽的心境。</p>
+								<p>在一起，分享，就是最原始的快乐。</p>
+							</div>
+							<div class="page3_btns">
+								<a href="product.html?page=0">聚会烤架</a>
+								<a href="product.html?page=1">多人配件</a>
+								<a href="recipes.html">多人食谱</a>
+							</div>
+						</div>	
+						<div class="wPage3_content hidden-lg col-md-12 col-sm-12">
+							<h4 class="">原始人，最自然纯粹的快乐。</h4>
+							<div class="wPage3_des ">
+								<p>滋滋烧烤声，上升的气泡，</p>
+								<p>传递的烤串，爽朗的笑声，</p>
+								<p>在一起，分享，</p>
+								<p>就是最原始的快乐。</p>
+							</div>
+							<div class="wPage3_btns">
+								<div><a href="product.html?page=0">聚会烤架</a></div>
+								<div><a href="recipes.html">多人食谱</a></div>
+							</div>
+						</div>							
+		       	 	</div>	    		
+		    	</div>
+		    </div>	    
+		    <div class="section container ">
+		    	<div class="page4">
+			        <div class="page4_mask">
+						<div class="page4_content col-lg-5 col-lg-offset-2 hidden-md hidden-sm hidden-xs">
+							<h4 class="">原始人，最自然纯粹的成就。  </h4>
+							<h5 class="">原始人，创造最简单，最自由的成就感。 </h5>
+							<div class="page4_des ">
+								<p>加勒比，美式，希腊，东南亚，日式5大烧烤风味，  </p>
+								<p>原始人食谱从5大风味中提取精髓，简单呈现纯正口感，</p>
+								<p>开发了烧烤配套的衍生产品和配件。</p>
+								<p>燃起火炭，架起美味，</p>
+								<p>原始的方法，纯粹的满足。</p>
+							</div>
+							<div class="page4_btns">
+								<a href="recipes_page_1.html">烧烤套餐</a>
+								<a href="recipes.html">全系食谱</a>
+							</div>
+						</div>	
+						<div class="wPage4_content hidden-lg col-md-12 col-sm-12">
+							<h4 class="">原始人，最自然纯粹的快乐。</h4>
+							<div class="wPage4_des ">
+								<p>滋滋烧烤声，上升的气泡，</p>
+								<p>传递的烤串，爽朗的笑声，</p>
+								<p>在一起，分享，</p>
+								<p>就是最原始的快乐。</p>
+							</div>
+							<div class="wPage4_btns">
+								<div><a href="recipes_page_1.html">烧烤套餐</a></div>
+								<div><a href="recipes.html">全系食谱</a></div>
+							</div>
+						</div>							
+		        	</div>	    		
+		    	</div>
+		    </div>	    
+		    <div class="section container">
+		    	<div class="page5">
+			        <div class="page5_mask">
+						<div class="page5_content col-lg-5 col-lg-offset-2 hidden-md hidden-sm hidden-xs">
+							<h4>原始人，最简单纯粹的自由。    </h4>
+							<h5>原始人，探索最自然舒适的户外生活。 </h5>
+							<div class="page5_des">
+								<p>温暖和煦的微风，柔软舒适的草地。</p>
+								<p>林间斑驳阳光，湖边点点萤火。</p>
+								<p>原始人，和您一起探索惊喜。</p>
+								<p>自由探索，探索自由。</p>
+							</div>
+							<div class="page5_btns">
+								<a href="product.html?page=2">户外用品</a>
+							</div>
+						</div>	
+						<div class="wPage5_content animated zoomIn  hidden-lg col-md-12 col-sm-12">
+							<h4>原始人，最简单纯粹的自由。</h4>
+							<div class="wPage5_des">
+								<p>温暖和熙的微风，柔软舒适的草地</p>
+								<p>林间斑驳的阳光，湖边点点萤火</p>
+								<p>自由探索，探索自由</p>
+							</div>
+							<div class="wPage5_btns">
+								<div><a href="product.html?page=2">户外用品</a></div>
+							</div>
+						</div>							
+			        </div>    		
+		    	</div>
+		    </div>			    
+		    <div class="section container">
+		    	<div class="page6 hidden-md hidden-sm hidden-xs">
+			        <ul class="page6_main ">
+			        	<li class="col-lg-3  col-lg-offset-3">
+			        		<h3 class="page6_title">ABOUT US</h3>
+			        		<h4 class="page6_subTitle">品牌观</h4>
+			        		<div class="page6_about_img">
+			        			<img src="images/index_about_bg.jpg"/>
+			        		</div>
+			        		<p class="page6_about_des">原始人，自然满足感</p>
+			        		<div class="page6_about_btn">
+			        			<a href="contact.html">ABOUT</a>
+			        		</div>
+			        	</li>
+			        	<li class="col-lg-3">
+			        		<h3 class="page6_title">MALL</h3>
+			        		<h4 class="page6_subTitle">商城</h4>
+			        		<div class="page6_mall_img">
+			        			<img src="images/index_mall_bg.jpg"/>
+			        		</div>
+			        		<p class="page6_about_des">进入网上商城购买</p>			
+			        		<div class="page6_mall_btn">
+			        			<a href="mallLink.html">BUY</a>
+			        		</div>
+			        	</li>
+			        </ul>
+			        <div class="bottom_logo"><img src="images/index_logo.png"/>
+			        			<p>COPYRIGHT © PRIMITIVE. ALL RIGHTS RESERVED</p>
+			        </div>
+		    	</div>
+		    	<div class="wPage6 hidden-lg">
+			        <ul class="wPage6_main">
+			        	<li>
+			        		<div class="wPage6_about_img  col-md-7 col-sm-7 col-xs-7 col-md-offset-1 col-sm-offset-1 col-xs-offset-1">
+			        			<img src="images/index_about_bg.jpg"/>
+			        		</div>
+			        		<div class="wPage6_mes col-md-4 col-sm-4 col-xs-4">
+								<h3 class="wPage6_title">ABOUT US</h3>
+				        		<h4 class="wPage6_subTitle">品牌观</h4>	
+				        		<div class="wPage6_btn">
+				        			<a href="brand.html"><img src="images/wIndex_icon.png"/></a>
+				        		</div>
+			        		</div>
+			        	</li>
+			        	<li>
+			        		<div class="wPage6_mall_img  col-md-7 col-sm-7 col-xs-7 col-md-offset-1 col-sm-offset-1 col-xs-offset-1">
+			        			<img src="images/index_mall_bg.jpg"/>
+			        		</div>
+			        		<div class="wPage6_mes col-md-4 col-sm-4 col-xs-4">
+			        			<h3 class="wPage6_title">MALL</h3>
+				        		<h4 class="wPage6_subTitle">商城</h4>
+				        		<div class="wPage6_btn">
+				        			<a href="mallLink.html"><img src="images/wIndex_icon.png"/></a>
+				        		</div>
+			        		</div>			        		
+			        	</li>
+			        </ul>
+			        <div class="bottom_logo"><img src="images/index_logo.png"/>
+			        			<p>COPYRIGHT © PRIMITIVE. ALL RIGHTS RESERVED</p>
+			        </div>		        		
+		    	</div>
+		    </div>		
+		</div>
+		
+		
+		
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.fullPage1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/my.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/duogongneng.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+							var hasMask1 = true ;
+							var hasMask2 = true;
+							var hasMask3 = true;
+							var hasMask4 = true;
+							var hasMask5 = true;
+							var curPage = 0;
+							var is_wap = false;
+		/*REM*/
+			~function(){
+				var desW = 1920,
+					desW2 = 1200,
+					winW = document.documentElement.clientWidth||document.body.clientWidth;	
+	
+						if(winW <= 800){
+							console.log('3')
+							document.documentElement.style.fontSize = winW / 200 * 100 + 'px';
+							
+						}else if(winW <= 1200){
+							is_wap = true;
+							$('#dowebok').fullpage({
+						    	verticalCentered:true,
+						    	afterLoad: function(anchorLink,index){
+						    		if(index == 1){
+										$('.page1').fadeIn(1000)
+												
+						    		}
+						    		if(index == 2){
+										$('.page2').fadeIn(1000,function(){
+											
+												$('.page2_content h5').fadeIn(500,function(){
+													$('.page2_des p').fadeIn(500,function(){
+														$('.page2_btns').fadeIn(500)
+													})
+												})
+						
+													$('.wPage2_des').fadeIn(500,function(){
+														$('.wPage2_btns div').fadeIn(500)
+													})
+																
+										});
+										
+						    		}
+						    		if(index == 3){
+										$('.page3').fadeIn(1000,function(){
+											
+												$('.page3_content h5').fadeIn(500,function(){
+													$('.page3_des p').fadeIn(500,function(){
+														$('.page3_btns').fadeIn(500)
+													})
+												})
+						
+													$('.wPage3_des').fadeIn(500,function(){
+														$('.wPage3_btns div').fadeIn(500)
+													})
+																
+										});
+						    		}
+						    		if(index == 4){	
+										$('.page4').fadeIn(1000,function(){
+											
+												$('.page4_content h5').fadeIn(500,function(){
+													$('.page4_des p').fadeIn(500,function(){
+														$('.page4_btns').fadeIn(500)
+													})
+												})
+						
+													$('.wPage4_des').fadeIn(500,function(){
+														$('.wPage4_btns div').fadeIn(500)
+													})
+																
+										});
+						    		}
+						    		if(index == 5){	
+										$('.page5').fadeIn(1000,function(){
+											
+												$('.page5_content h5').fadeIn(500,function(){
+													$('.page5_des p').fadeIn(500,function(){
+														$('.page5_btns').fadeIn(500)
+													})
+												})
+						
+													$('.wPage5_des').fadeIn(500,function(){
+														$('.wPage5_btns div').fadeIn(500)
+													})
+																
+										});
+						    		}
+						    		if(index == 6){
+										$('.page6').fadeIn(500); 	 
+										$('.page6_main').find('img').animate({
+											width:'100%',
+											height:'100%'
+										},1000);
+										$('.wPage6_mall_img img').animate({
+											width:'120%',
+											height:'120%'
+										},1000);		
+										$('.wPage6_about_img img').animate({
+											width:'120%',
+											height:'120%'
+										},1000);	
+						    		}
+						    	},
+						    	onLeave: function(index,nextIndex,direction){
+						    		if(index == 1){
+						    			hasMask1 = true;
+										$('.page1').fadeOut(500)
+										$('.main-nav').animate({top:0},'slow')
+										$('.page1_mask').animate({
+								    		top:0
+								    	},500);
+										
+						    		}
+						    		
+						    		if(index == 2&&direction == 'up'){
+						    			curPage = 0;
+										$('.main-nav').animate({top:'-0.74rem'},'slow',function(){
+											
+										});
+						    		}
+						    		if(index ==2){
+						    			$('.page2').fadeOut(500)  
+						 				$('.page2_mask').animate({
+								    		top:0
+								    	},500);   		
+						    		}
+						    		if(index == 3){
+										$('.page3').fadeOut(500)  
+										$('.page3_mask').animate({
+								    		top:0
+								    	},500);				
+						    		}
+						    		if(index == 4){
+										$('.page4').fadeOut(500)    	
+										$('.page4_mask').animate({
+								    		top:0
+								    	},500);				
+						    		}
+						    		if(index == 5){
+										$('.page5').fadeOut(500)    
+										$('.page5_mask').animate({
+								    		top:0
+								    	},500);				
+						    		}
+						    		if(index == 6){
+										$('.page6').fadeOut(500);
+										$('.page6_main').find('img').animate({
+											width:'120%',
+											height:'120%'
+										},500);
+										$('.wPage6_mall_img img').animate({
+											width:'100%',
+											height:'100%'
+										},500);		
+										$('.wPage6_about_img img').animate({
+											width:'100%',
+											height:'100%'
+										},500);					
+						    		}    		
+						    	}
+						    	
+						   });									
+							document.documentElement.style.fontSize = winW / 800 * 100 + 'px';
+							$('.page2_mask').css({
+								backgroundImage: 'url(images/wIndex_bg2_mask.png)'
+							});
+							$('.page3_mask').css({
+								backgroundImage: 'url(images/wIndex_bg3_mask.png)'
+							});
+							$('.page4_mask').css({
+								backgroundImage: 'url(images/wIndex_bg4_mask.png)'
+							});
+							$('.page5_mask').css({
+								backgroundImage: 'url(images/wIndex_bg5_mask.png)'
+							});							
+						}else{
+							document.documentElement.style.fontSize = winW / desW * 100 + 'px';
+
+							    $('#dowebok').fullpage({
+							    	verticalCentered:true,
+							    	afterLoad: function(anchorLink,index){
+							    		if(index == 1){
+											hasMask2 = true;			    			
+											$('.page1').fadeIn(1000)
+													
+							    		}
+							    		if(index == 2){
+											hasMask1 = true;hasMask3 = true;
+											$('.page2').fadeIn(1000,function(){
+													
+													$('.page2_content h5').fadeIn(1500);
+													$('.page2_des p').fadeIn(1500);
+													$('.page2_btns').fadeIn(1500);
+														
+												
+							
+														$('.wPage2_des').fadeIn(500,function(){
+															$('.wPage2_btns div').fadeIn(500)
+														})
+																	
+											});
+											
+							    		}
+							    		if(index == 3){
+							    			hasMask2=true;hasMask4=true;
+											$('.page3').fadeIn(1000,function(){
+												
+													$('.page3_content h5').fadeIn(1500);
+														$('.page3_des p').fadeIn(1500);
+															$('.page3_btns').fadeIn(1500);
+														
+													
+							
+														$('.wPage3_des').fadeIn(500,function(){
+															$('.wPage3_btns div').fadeIn(500)
+														})
+																	
+											});
+							    		}
+							    		if(index == 4){	
+							    			hasMask3=true;hasMask5=true;
+											$('.page4').fadeIn(1000,function(){
+												
+													$('.page4_content h5').fadeIn(1500);
+														$('.page4_des p').fadeIn(1500);
+															$('.page4_btns').fadeIn(1500);
+													
+							
+														$('.wPage4_des').fadeIn(500,function(){
+															$('.wPage4_btns div').fadeIn(500)
+														})
+																	
+											});
+							    		}
+							    		if(index == 5){	
+							    			hasMask4=true;
+											$('.page5').fadeIn(1000,function(){
+												
+													$('.page5_content h5').fadeIn(1500);
+														$('.page5_des p').fadeIn(1500);
+															$('.page5_btns').fadeIn(1500);
+													
+							
+														$('.wPage5_des').fadeIn(500,function(){
+															$('.wPage5_btns div').fadeIn(500)
+														})
+																	
+											});
+							    		}
+							    		if(index == 6){
+											$('.page6').fadeIn(500); 	 
+											$('.page6_main').find('img').animate({
+												width:'100%',
+												height:'100%'
+											},1000);
+											$('.wPage6_mall_img img').animate({
+												width:'120%',
+												height:'120%'
+											},1000);		
+											$('.wPage6_about_img img').animate({
+												width:'120%',
+												height:'120%'
+											},1000);	
+							    		}
+							    	},
+							    	onLeave: function(index,nextIndex,direction){
+							    		if(index == 1){
+							    			hasMask1 = true;
+											$('.page1').fadeOut(500)
+											$('.main-nav').animate({top:0},'slow')
+											$('.page1_mask').animate({
+									    		top:0
+									    	},500);
+											
+							    		}
+							    		if(index ==1&&direction == 'down'){
+							    			curPage = 1;
+							    		}
+							    		if(index ==2&&direction == 'down'){
+							    			curPage = 2;
+							    		}			
+							    		if(index ==3&&direction == 'up'){
+							    			curPage = 1;
+							    		}
+							    		if(index ==3&&direction == 'down'){
+							    			curPage = 3;
+							    		}	
+							    		if(index ==4&&direction == 'up'){
+							    			curPage = 2;
+							    		}
+							    		if(index ==4&&direction == 'down'){
+							    			curPage = 4;
+							    		}		
+							    		if(index ==5&&direction == 'up'){
+							    			curPage = 3;
+							    		}
+							    		if(index ==5&&direction == 'down'){
+							    			curPage = 5;
+							    		}		
+							    		if(index ==6&&direction == 'up'){
+							    			curPage = 4;
+							    		}
+							    		if(index == 2&&direction == 'up'){
+							    			curPage = 0;
+											$('.main-nav').animate({top:'-0.74rem'},'slow',function(){
+												
+											});
+							    		}
+							    		if(index ==2){
+							    			$('.page2').fadeOut(500)  
+							 				$('.page2_mask').animate({
+									    		top:0
+									    	},500);   		
+							    		}
+							    		if(index == 3){
+											$('.page3').fadeOut(500)  
+											$('.page3_mask').animate({
+									    		top:0
+									    	},500);				
+							    		}
+							    		if(index == 4){
+											$('.page4').fadeOut(500)    	
+											$('.page4_mask').animate({
+									    		top:0
+									    	},500);				
+							    		}
+							    		if(index == 5){
+											$('.page5').fadeOut(500)    
+											$('.page5_mask').animate({
+									    		top:0
+									    	},500);				
+							    		}
+							    		if(index == 6){
+											$('.page6').fadeOut(500);
+											$('.page6_main').find('img').animate({
+												width:'120%',
+												height:'120%'
+											},500);
+											$('.wPage6_mall_img img').animate({
+												width:'100%',
+												height:'100%'
+											},500);		
+											$('.wPage6_about_img img').animate({
+												width:'100%',
+												height:'100%'
+											},500);					
+							    		}    		
+							    	}
+							    	
+							   });								
+						}
+				}();	
+//			   
+
+				
+  				
+		</script>
+	</body>
+</html>

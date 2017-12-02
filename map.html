@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/animate.min.css"/>		
+		<link rel="stylesheet" type="text/css" href="css/my.css"/>	
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+		<style type="text/css">
+			.setup_banner{
+				width: 100%;
+				height: 7.6rem;
+				background: url(images/camp_map_banner1.jpg)no-repeat;
+				background-size: cover;
+				background-position: center;
+			}
+			.hMask{
+				display: block;
+				height: .74rem;
+			}
+			.recipes_des{
+				width: 100%;
+			    height: auto;
+			    padding: .7rem;
+			}
+			.recipes_des p{
+				text-align: center;
+				font-family: simhei;
+				font-size: .24rem;
+				line-height: .5rem;
+			}
+			.food_book1,.food_book2,.food_book3,.food_book4{
+				width: 10.34rem;
+				height: 9.7rem;
+				margin: 0 auto;
+			}
+			.food_book_title{
+				text-align: center;
+				font-size: .36rem;
+				margin-bottom: .4rem;
+			}
+			.recipes_title_icon1,.recipes_title_icon2,.recipes_title_icon3,.recipes_title_icon4{
+				display: inline-block;
+				width: .6rem;
+				height: .46rem;
+				margin-right: .1rem;
+				background: url(images/lajiao_icon.jpg)no-repeat;
+				background-position: center;
+				background-size: cover;
+			}
+			.recipes_title_icon2{
+				background: url(images/bull_icon.jpg)no-repeat;
+			}
+			.recipes_title_icon3{
+				background: url(images/fish_icon.jpg)no-repeat;
+			}
+			.recipes_title_icon4{
+				background: url(images/qiezi_icon.jpg)no-repeat;
+			}						
+			.food_book1_list{
+				width: 100%;
+				height: auto;
+			}
+			.food_book1_list li{
+				margin-bottom: .2rem;
+			}
+			.food_book1_list li p{
+				text-align: center;
+				font-family: simhei;
+				font-size: .26rem;
+				line-height: .6rem;
+			}
+			.food_book1_time{
+				width: 100%;
+				height: .5rem;
+				line-height: .5rem;
+				font-size: .22rem;
+				text-align: center;
+			}
+				
+			.food_book1_img{
+				width: 100%;
+				height: 100%;
+				display: block;
+			}
+			.food_book1_img img{
+				width: 100%;
+				height: auto;
+			}
+			/*.bottom_logo{
+				text-align: center;
+				padding: .4rem 0;
+				clear: both;
+			}*/
+			.skills_icon1{
+				display: inline-block;
+				width: .92rem;
+				height: .76rem;
+				margin-right: .1rem;
+				background: url(images/skills_icon2.png)no-repeat;
+				background-position: center;
+				background-size: cover;				
+			}		
+			.skills_icon2{
+				display: inline-block;
+				width: .76rem;
+				height: .76rem;
+				margin-right: .1rem;
+				background: url(images/skills_icon1.png)no-repeat;
+				background-position: center;
+				background-size: cover;				
+			}	
+			.skills_title{
+				display: inline-block;
+				
+			}	
+			.skills_title p{
+				font-size: .39rem;
+			}		
+			.skills_title span{
+				font-size: .20rem;
+				color: #7C7C7C;
+			}	
+			.map_main{
+				width: 8.72rem;
+				height: auto;
+				margin:0 auto;
+				padding:.4rem  .52rem;
+			}	
+			.map_main_img{
+				width: 100%;
+				height: 1.64rem;
+			}
+			.map_main_img img{
+				width: 100%;
+				height: auto;
+			}
+			.map_des{
+				width: 100%;
+				height: 1rem;
+				text-align: justify;
+				font-size: .16rem;
+				line-height: .24rem;
+				padding-top: .16rem;
+			}
+			.map_list{
+				width: 100%;
+			}
+			.map_list h4{
+				font-size: .24rem;
+				color: #505050;
+				height: .5rem;
+				line-height: .5rem;
+			}
+			.map_list p{
+				font-size: .14rem;
+				color: #929292;
+				height: .3rem;
+				line-height: .2rem;
+				border-bottom: 2px solid #c5e180;
+			}
+			.is_zhangp,.is_mark,.is_tel{
+				display: inline-block;
+				width: .24rem;
+				height: .24rem;
+				margin-right: .06rem;
+				background: url(images/camp_map_icon1.png)no-repeat;
+				background-position: center;
+				background-size: cover;	
+				vertical-align: middle;
+			}
+			.is_mark{
+				background: url(images/camp_map_icon3.png)no-repeat;
+				background-position: center;
+				background-size: cover;	
+				vertical-align: middle;				
+			}
+			.is_tel{
+				background: url(images/camp_map_icon2.png)no-repeat;
+				background-position: center;
+				background-size: cover;	
+				vertical-align: middle;				
+			}	
+			.map_list_c{
+				width: 100%;
+				height: 1.84rem;
+			}		
+			.map_list_list{
+				width: 100%;
+				height: .46rem;
+				line-height: .46rem;
+				border-bottom: 2px dotted #7C7C7C;
+			}
+			.map_list_list ul{
+				width: 100%;
+				display: flex;
+			}
+			.map_list_list ul li{
+				flex: 1;
+			}
+			@media only screen and (min-width: 325px) and (max-width: 980px) {
+				.map_main{
+					width: 100%;
+				}
+				.map_des{
+					font-size: .4rem;
+					height: 3rem;
+				    line-height: 0.54rem;					
+				}
+				.map_list_list{
+					height: 3.3rem;
+				}
+				.map_list_list ul{
+					width: 100%;
+					height: 100%;
+					display: block;
+				}	
+				.map_list_list ul li{
+					font-size: .44rem;
+					line-height: 1rem;
+				}	
+				.is_zhangp,.is_mark,.is_tel{
+					width: .5rem;
+					height: .4rem;
+				}		
+				.setup_banner{
+					height: 5.6rem;
+				}
+			}			
+			
+		</style>
+	</head>
+	<body>
+		<header class="main-nav hidden-md hidden-sm">
+			<div class="main-nav-logo"><img style="vertical-align: middle;width: 80%;height: auto;" src="images/brand_logo.png"/></div>
+			<ul>
+					<li><a href="product.html?page=0">烧烤炉</a></li>
+					<li><a href="product.html?page=1">烧烤配件</a></li>
+					<li><a href="product.html?page=2">户外用品</a></li>
+					<li><a href="skills.html">技巧</a></li>
+					<li><a href="recipes.html">食谱</a></li>
+					<li><a href="brand.html">品牌</a></li>
+					<li><a href="mallLink.html">商城</a></li>
+					<li><a href="contact.html">联系我们</a></li>	
+			</ul>
+		</header>		
+		<div class="wap_nav hidden-lg">
+			<div class="wap_nav_link">
+				<div class="wap_nav_logo"></div>
+				<div class="handle"></div>
+				<div class="handle"></div>
+				<div class="handle"></div>
+			</div>
+			<div class="wap_nav_list">
+				<ul>
+					<li><a href="product.html?page=0">烧烤炉</a></li>
+					<li><a href="product.html?page=1">烧烤配件</a></li>
+					<li><a href="product.html?page=2">户外用品</a></li>
+					<li><a href="skills.html">技巧</a></li>
+					<li><a href="recipes.html">食谱</a></li>
+					<li><a href="brand.html">品牌</a></li>
+					<li><a href="mallLink.html">商城</a></li>
+					<li><a href="contact.html">联系我们</a></li>	
+				</ul>
+			</div>
+		</div>		
+		<div class="hMask hidden-md hidden-sm hidden-xs"></div>
+		<div class="setup_banner"></div>
+		<div class="map_main">
+			<div class="map_main_img">
+				<img src="images/camp_map_bg1.jpg"/>
+			</div>
+			<p class="map_des">本网页仅提供露营地资讯参考，若欲前往露营者请先与营地业者联络询问相关事宜，若有本网页未登入 的营地资讯或需要校正更新资料，也欢迎业者提供给本网页资讯EMAIL，谢谢！</p>
+			<div class="map_list">
+				<h4>浙江地区</h4>
+				<p>CAMP</p>
+				<ul class="map_list_c">
+					<li class="map_list_list">
+						<ul>
+							<li class=" col-md-12 col-sm-12 col-xs-12"><i class="is_zhangp"></i>大清谷</li>
+							<li class=" col-md-12 col-sm-12 col-xs-12"><i class="is_tel"></i>0571-88960222</li>
+							<li class=" col-md-12 col-sm-12 col-xs-12"><a href="http://api.map.baidu.com/geocoder?address=大清谷&amp;output=html" target="_blank"><i class="is_mark"></i></a>杭州龙坞风景区内  </li>
+						</ul>
+					</li>
+					<li class="map_list_list">
+						<ul>
+							<li class="col-md-12 col-sm-12 col-xs-12"><i class="is_zhangp"></i>安吉中南百草园</li>
+							<li class=" col-md-12 col-sm-12 col-xs-12"><i class="is_tel"></i>0572-5217186</li>
+							<li class="col-md-12 col-sm-12 col-xs-12"><a href="http://api.map.baidu.com/geocoder?address=安吉中南百草园&amp;output=html"target="_blank"><i class="is_mark"></i></a>湖州市安吉县三官 </li>
+						</ul>						
+					</li>
+					<li class="map_list_list">
+						<ul>
+							<li class="col-md-12 col-sm-12 col-xs-12"><i class="is_zhangp"></i>浪石金滩 </li>
+							<li class="col-md-12 col-sm-12 col-xs-12"><i class="is_tel"></i>0571-64692999</li>
+							<li class="col-md-12 col-sm-12 col-xs-12"><a href="http://api.map.baidu.com/geocoder?address=浪石金滩&amp;output=html"target="_blank"><i class="is_mark"></i></a>浙江省杭州市桐庐县 </li>
+						</ul>						
+					</li>
+					<li class="map_list_list">
+						<ul>
+							<li class="col-md-12 col-sm-12 col-xs-12"><i class="is_zhangp"></i>松兰山海滨旅游度假区 </li>
+							<li class=" col-md-12 col-sm-12 col-xs-12"><i class="is_tel"></i>0574-65971999</li>
+							<li class=" col-md-12 col-sm-12 col-xs-12"><a href="http://api.map.baidu.com/geocoder?address=松兰山海滨旅游度假区&amp;output=html"target="_blank"><i class="is_mark"></i></a>宁波市象山县白沙湾 </li>
+						</ul>						
+					</li>
+				</ul>
+			</div>
+			
+		</div>
+		
+		<div class="bottom_logo"><img src="images/index_logo.png"/>
+					<p>Copyright © Primitive. All rights reserved</p>
+		</div>	
+		
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.fullPage.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/my.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+		/*REM*/
+			~function(){
+				var desW = 1920,
+					desW2 = 1200,
+					winW = document.documentElement.clientWidth||document.body.clientWidth;	
+					
+						if(winW <= 800){						
+							document.documentElement.style.fontSize = winW / 200 * 100 + 'px';
+							
+						}else if(winW <= 1200){
+							 var swiper = new Swiper('.swiper-container', {
+						        pagination: '.swiper-pagination',
+						         slidesPerView: 1,
+						         centeredSlides:true,
+						        autoplayDisableOnInteraction : false,
+						        paginationClickable: true,
+						        loop:true
+						    });
+							document.documentElement.style.fontSize = winW / 800 * 100 + 'px';					
+						}else{
+								 var swiper = new Swiper('.swiper-container', {
+						        pagination: '.swiper-pagination',
+						         slidesPerView: 3,
+						         centeredSlides:true,
+						        autoplayDisableOnInteraction : false,
+						        paginationClickable: true,
+						        loop:true
+						    });						
+							document.documentElement.style.fontSize = winW / desW * 100 + 'px';							
+						}
+				}();
+			//swiper
+
+
+		</script>			
+	</body>
+</html>

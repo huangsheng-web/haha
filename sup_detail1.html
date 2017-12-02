@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/animate.min.css"/>		
+		<link rel="stylesheet" type="text/css" href="css/my.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper-3.4.2.min.css"/>
+		
+		<style type="text/css">
+			.mallLink_banner{
+				width: 15rem;
+				height: 8rem;
+				float: left;
+			}
+			.mallLink_banner_img{
+				width: 100%;
+				height: 100%;
+				background: url(images/mall_link_banner1.jpg)no-repeat;
+				background-size: cover;
+				background-position: center;				
+			}
+			.mallLink_main{
+				width: 100%;
+				height: 8rem;
+				padding-top: .74rem;
+			}
+			.mallLink_links{
+				width: 4.2rem;
+				height: 8rem;
+				float: left;
+			}
+			.mallLink_links ul{
+				width: 100%;
+				height: 100%;
+			}
+			.mallLink_links ul li{
+				width: 100%;
+				height: 2rem;
+				text-align: center;
+			}
+			.mallLink_links ul li a{
+				width: 100%;
+				height: 100%;
+				display: block;
+			}
+			.mallLink_links ul li a:hover{
+				background: #eeeeee;
+			}
+			.mallLink_links ul li a img{
+				width: 100%;
+				height: 100%;
+				vertical-align:middle;
+			}
+			.page_title p{
+				font-size: .12rem;
+				height: .5rem;
+				background: url(images/star5_icon.jpg)no-repeat 0 0.2rem;
+				background-position: center;
+			}
+			.food_book1_list{
+				width: 100%;
+				height: auto;
+			}
+			.food_book1_list li{
+				margin-bottom: .2rem;
+			}
+			.food_book1_list li p{
+				text-align: center;
+				font-family: simhei;
+				font-size: .26rem;
+				line-height: .6rem;
+			}
+				
+			.food_book1_img{
+				width: 100%;
+				height: 100%;
+				display: block;
+			}
+			.food_book1_img img{
+				width: 100%;
+				height: auto;
+			}				
+			@media only screen and (min-width: 325px) and (max-width: 980px) {
+				.page_banner{
+					width: 100%;
+				}
+				.page_banner_main{
+					width: 100%;
+				}
+				.page_banner_img{
+					width: 82%;
+				}
+				.bottom_logo img{
+					width: 2rem;
+				}	
+				.bottom_logo p{
+					font-size: .34rem;
+				}	
+				.page_title{
+					height: 2.36rem;
+				}	
+				.page_title h5{
+					font-size: .48rem;
+					line-height: 1rem;
+    				height: 1rem;
+				}
+				.page_title p{
+					font-size: .3rem;
+					height: 1.1rem;
+					background-size: 34%;
+				}
+				.page_tool{
+					height: 2.4rem;
+					padding-top: .23rem;
+					border-bottom: 2px dotted #7C7C7C;
+				}
+				.page_dapei h4{
+					font-size: .48rem;
+					margin-top: .4rem;
+					margin-bottom: .2rem;
+				}				
+				.page_tool p,.page_dapei p{
+					font-size: .3rem;
+					line-height: .5rem;
+				}
+				.page_title,.page_content{
+					width: 100%;
+					margin-left: 0;
+				}			
+				.page_dapei{
+					height: 3.5rem;
+				}
+				.food_book1_list li p{
+					font-size: .4rem;
+				}
+			}				
+		</style>		
+	</head>
+	<body>
+		<header class="main-nav hidden-md hidden-sm">
+			<div class="main-nav-logo"><img style="vertical-align: middle;width: 80%;height: auto;" src="images/brand_logo.png"/></div>
+			<ul>
+					<li><a href="product.html?page=0">烧烤炉</a></li>
+					<li><a href="product.html?page=1">烧烤配件</a></li>
+					<li><a href="product.html?page=2">户外用品</a></li>
+					<li><a href="skills.html">技巧</a></li>
+					<li><a href="recipes.html">食谱</a></li>
+					<li><a href="brand.html">品牌</a></li>
+					<li><a href="mallLink.html">商城</a></li>
+					<li><a href="contact.html">联系我们</a></li>	
+			</ul>
+		</header>		
+		<div class="wap_nav hidden-lg">
+			<div class="wap_nav_link">
+				<div class="wap_nav_logo"></div>
+				<div class="handle"></div>
+				<div class="handle"></div>
+				<div class="handle"></div>
+			</div>
+			<div class="wap_nav_list">
+				<ul>
+					<li><a href="product.html?page=0">烧烤炉</a></li>
+					<li><a href="product.html?page=1">烧烤配件</a></li>
+					<li><a href="product.html?page=2">户外用品</a></li>
+					<li><a href="skills.html">技巧</a></li>
+					<li><a href="recipes.html">食谱</a></li>
+					<li><a href="brand.html">品牌</a></li>
+					<li><a href="mallLink.html">商城</a></li>
+					<li><a href="contact.html">联系我们</a></li>	
+				</ul>
+			</div>
+		</div>		
+		<div class="page_banner">
+			<div class="page_banner_main">
+				<div class="page_banner_img">
+					<img src="images/supportInside_banner1.jpg"/>
+				</div>
+			</div>
+			<div class="page_banner_tap hidden-md hidden-sm hidden-xs">
+				<p class="page_banner_tap_title">更多技巧</p>
+				<ul>
+					<li><a href="sup_detail1.html"><img src="images/supportInside_list1.jpg" alt="" /></a>
+						<span>对火的基本认识</span>
+					</li>
+					<li><a href="sup_detail4.html"><img src="images/supportInside_list2.jpg" alt="" /></a>
+						<span>直接烧烤</span>
+					</li>
+					<li><a href="sup_detail2.html"><img src="images/supportInside_list3.jpg" alt="" /></a>
+						<span>间接烧烤</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+	    <div class="page_title">
+			<h5>对于火的基本认识</h5>
+			<p>推荐指数</p>			    	
+	    </div>
+		<div class="page_content">
+			<div class="page_step">
+				<ul>
+					<li>
+						<div class="page_step_img">
+							<img src="images/supportInside_bg1.jpg"/>
+						</div>							
+					</li>
+				</ul>
+			</div>			
+			<div class="page_tool">
+				<p>不同的食物对炭烤温度的要求是不同的，所以要学会控制炭火的温度。
+				点火固然容易，但要使木炭发热到刚刚好的程度，必须对火有基本的认
+				识才能做到。</p>
+			</div>
+			<div class="page_dapei">
+				<h4>火是靠什么燃烧的呢？ </h4>
+				<p>氧气。氧气的流动，也就是气流，可以通过烧烤架上通风孔的开关来控
+					制。打开通风孔会使更多的氧气通过，火便会烧得更旺更热。相反，关
+					上通风孔会阻止氧气通过，降低烧烤的温度。</p>
+			</div>
+			<div class="food_book1 hidden-lg">
+				<ul class="food_book1_list container">
+					<li class="col-lg-4 col-md-6 col-sm-6 col-xs-6"><a class="food_book1_img"  href=""><img src="images/supportInside_list4.jpg" alt="" /></a>
+						<p>木炭还是瓦斯？ </p>			
+					</li>
+					<li class="col-lg-4 col-md-6 col-sm-6 col-xs-6"><a class="food_book1_img" href=""><img src="images/supportInside_list5.jpg" alt="" /></a>
+						<p>间接烧烤 </p>
+					</li>
+					<li class="col-lg-4 col-md-6 col-sm-6 col-xs-6"><a  class="food_book1_img" href=""><img src="images/supportInside_list6.jpg" alt="" /></a>
+						<p>直接烧烤 </p>
+					</li>
+					<li class="col-lg-4 col-md-6 col-sm-6 col-xs-6"><a  class="food_book1_img" href=""><img src="images/supportInside_list7.jpg" alt="" /></a>
+						<p>铲子和钳子 </p>
+					</li>
+				</ul>
+			</div>	
+		</div>
+		<div class="bottom_logo">
+			<img src="images/index_logo.png"/>
+			<p>Copyright © Primitive. All rights reserved</p>
+		</div>	
+		
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.fullPage.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script src="js/my.js" type="text/javascript" charset="utf-8"></script>	
+		<script src="js/swiper-3.4.2.min.js" type="text/javascript" charset="utf-8"></script>		
+		<script type="text/javascript">
+		/*REM*/
+			~function(){
+				var desW = 1920,
+					desW2 = 1200,
+					winW = document.documentElement.clientWidth||document.body.clientWidth;	
+					
+						if(winW <= 800){						
+							document.documentElement.style.fontSize = winW / 200 * 100 + 'px';
+							
+						}else if(winW <= 1200){
+
+							document.documentElement.style.fontSize = winW / 800 * 100 + 'px';					
+						}else{
+							document.documentElement.style.fontSize = winW / desW * 100 + 'px';							
+						}
+				}();
+		/**/		
+		
+			 var swiper = new Swiper('.swiper-container', {
+		        pagination: '.swiper-pagination',
+		         slidesPerView: 1,
+		         centeredSlides:true,
+		        autoplayDisableOnInteraction : false,
+		        paginationClickable: true,
+		        loop:true
+		    });
+		</script>		
+	</body>
+</html>

@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/animate.min.css"/>		
+		<link rel="stylesheet" type="text/css" href="css/my.css"/>	
+		<!--<link rel="stylesheet" type="text/css" href="css/swiper-3.4.2.min.css"/>-->
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+		<style type="text/css">
+			.recipes_banner{
+				width: 100%;
+				height: 6.88rem;
+				padding-top: .74rem;
+			}
+			.recipes_banner_list{
+				width: 100%;
+				height: 100%;
+			}
+
+			.recipes_des{
+				width: 100%;
+			    height: auto;
+			    padding: .7rem;
+			}
+			.recipes_des p{
+				text-align: center;
+				font-family: simhei;
+				font-size: .24rem;
+				line-height: .5rem;
+			}
+			.food_book1,.food_book2,.food_book3,.food_book4{
+				width: 10.34rem;
+				height: 9.7rem;
+				margin: 0 auto;
+			}
+			.food_book_title{
+				text-align: center;
+				font-size: .36rem;
+				margin-bottom: .4rem;
+			}
+			.recipes_title_icon1,.recipes_title_icon2,.recipes_title_icon3,.recipes_title_icon4{
+				display: inline-block;
+				width: .6rem;
+				height: .46rem;
+				margin-right: .1rem;
+				background: url(images/lajiao_icon.jpg)no-repeat;
+				background-position: center;
+				background-size: cover;
+			}
+			.recipes_title_icon2{
+				background: url(images/bull_icon.jpg)no-repeat;
+			}
+			.recipes_title_icon3{
+				background: url(images/fish_icon.jpg)no-repeat;
+			}
+			.recipes_title_icon4{
+				background: url(images/qiezi_icon.jpg)no-repeat;
+			}						
+			.food_book1_list{
+				width: 100%;
+				height: auto;
+			}
+			.food_book1_list li p{
+				text-align: center;
+				font-family: simhei;
+				font-size: .28rem;
+			}
+			.food_book1_time{
+				width: 100%;
+				height: .5rem;
+				line-height: .5rem;
+				font-size: .22rem;
+				text-align: center;
+			}
+				
+			.food_book1_img{
+				width: 100%;
+				height: 100%;
+				display: block;
+			}
+			.food_book1_img img{
+				width: 100%;
+				height: auto;
+			}
+			.bottom_logo{
+				text-align: center;
+				padding: .4rem 0;
+				clear: both;
+			}			
+			@media only screen and (min-width: 325px) and (max-width: 980px) {
+				.food_book1,.food_book2,.food_book3,.food_book4{
+					width: 100%;
+				}
+			}			
+			
+		</style>
+	</head>
+	<body>
+		<header class="main-nav hidden-md hidden-sm">
+			<div class="main-nav-logo"><img style="vertical-align: middle;width: 80%;height: auto;" src="images/brand_logo.png"/></div>
+			<ul>
+				<li><a href="product.html?page=0">烧烤炉</a></li>
+				<li><a href="product.html?page=1">烧烤配件</a></li>
+				<li><a href="product.html?page=2">户外用品</a></li>
+				<li><a href="skills.html">技巧</a></li>
+				<li><a href="recipes.html">食谱</a></li>
+				<li><a href="brand.html">品牌</a></li>
+				<li><a href="mallLink.html">商城</a></li>
+				<li><a href="contact.html">联系我们</a></li>	
+			</ul>
+		</header>		
+		<div class="wap_nav hidden-lg">
+			<div class="wap_nav_link">
+				<div class="wap_nav_logo"></div>
+				<div class="handle"></div>
+				<div class="handle"></div>
+				<div class="handle"></div>
+			</div>
+			<div class="wap_nav_list">
+				<ul>
+				<li><a href="product.html?page=0">烧烤炉</a></li>
+				<li><a href="product.html?page=1">烧烤配件</a></li>
+				<li><a href="product.html?page=2">户外用品</a></li>
+				<li><a href="skills.html">技巧</a></li>
+				<li><a href="recipes.html">食谱</a></li>
+				<li><a href="brand.html">品牌</a></li>
+				<li><a href="mallLink.html">商城</a></li>
+				<li><a href="contact.html">联系我们</a></li>	
+				</ul>
+			</div>
+		</div>		
+	<!--swiper-->
+		<div class="swiper-container swiper-container-horizontal recipes_banner">
+	        <div class="swiper-wrapper recipes_banner_list" >
+	            <div class="swiper-slide "><a href="recipes_page_2.html"><img src="images/foodList_banner2.jpg"/></a></div>
+	            <div class="swiper-slide"><a href="recipes_page_1.html"><img src="images/foodList_banner1.jpg" alt="" /></a></div>
+	            <div class="swiper-slide" ><a href="recipes_page_3.html"><img src="images/foodList_banner3.jpg"/></a></div>
+	        </div>
+	        <!-- Add Pagination -->
+	        <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span></div>
+	    </div>
+		
+		<div class="recipes_des">
+			<p>原始人，自己动手做最简单纯粹的味道。   </p>
+			<p>我们准备了多人的聚会食谱，做起来非常简单。</p>
+			<p>世界五大烧烤系统精华，任你探索。</p>
+		</div>
+		<div class="food_book1">
+			<h4 class="food_book_title"><i class="recipes_title_icon1"></i>推荐菜谱</h4>
+			<ul class="food_book1_list container">
+				<li class="col-lg-4 col-md-6 col-sm-6 col-xs-6"><a class="food_book1_img" href="recipes_page_4.html"><img src="images/foodList_food1.jpg" alt="" /></a>
+					<p>烧巧克力香蕉</p>
+					<div class="food_book1_time">
+						<span>30分钟        易</span>
+						<i class="is_ok"></i>
+						<i class="is_ok"></i>
+						<i class="is_ok"></i>
+					</div>
+				</li>
+				<li class="col-lg-4 col-md-6 col-sm-6 col-xs-6"><a class="food_book1_img"  href="javascript:;"><img src="images/foodList_food2.jpg" alt="" /></a>
+					<p>亚洲风味酱汁排骨</p>
+					<div class="food_book1_time">
+						<span>45分钟        易</span>
+						<i class="is_ok"></i>
+						<i class="is_ok"></i>
+					</div>					
+				</li>
+				<li class="col-lg-4 col-md-6 col-sm-6 col-xs-6"><a class="food_book1_img"  href="recipes_page_2.html"><img src="images/foodList_food3.jpg" alt="" /></a>
+					<p>烤全鱼</p>
+					<div class="food_book1_time">
+						<span>30分钟        易</span>
+						<i class="is_ok"></i>
+						<i class="is_ok"></i>
+						<i class="is_ok"></i>
+					</div>	
+				</li>
+				<li class="col-lg-4 col-md-6 col-sm-6 col-xs-6"><a  class="food_book1_img" href="javascript:;"><img src="images/foodList_food4.jpg" alt="" /></a>
+					<p>烤鸡块</p>
+					<div class="food_book1_time">
+						<span>30分钟        易</span>
+						<i class="is_ok"></i>
+						<i class="is_ok"></i>
+						<i class="is_ok"></i>
+					</div>	
+				</li>
+				<li class="col-lg-4 col-md-6 col-sm-6 col-xs-6"><a  class="food_book1_img" href="recipes_page_1.html"><img src="images/foodList_food5.jpg" alt="" /></a>
+					<p>烤牛排配阿根廷辣酱</p>
+					<div class="food_book1_time">
+						<span>45分钟        易</span>
+						<i class="is_ok"></i>
+						<i class="is_ok"></i>
+					</div>	
+				</li>
+				<li class="col-lg-4 col-md-6 col-sm-6 col-xs-6"><a class="food_book1_img"  href="javascript:;"><img src="images/foodList_food6.jpg" alt="" /></a>
+					<p>烤卡蒙贝尔奶酪</p>
+					<div class="food_book1_time">
+						<span>30分钟        易</span>
+						<i class="is_ok"></i>
+						<i class="is_ok"></i>
+						<i class="is_ok"></i>
+					</div>	
+				</li>
+			</ul>
+		</div>
+		<div class="food_book2">
+			<h4 class="food_book_title"><i class="recipes_title_icon2"></i>推荐菜谱</h4>
+			<ul class="food_book1_list container">
+				<li class="col-lg-4 col-md-6 col-sm-6 col-xs-6"><a class="food_book1_img" href="recipes_page_4.html"><img src="images/foodList_food7.jpg" alt="" /></a>
+					<p>烧巧克力香蕉</p>
+					<div class="food_book1_time">
+						<span>30分钟        易</span>
+						<i class="is_ok2"></i>
+						<i class="is_ok2"></i>
+						<i class="is_ok2"></i>
+					</div>
+				</li>
+				<li class="col-lg-4 col-md-6 col-sm-6 col-xs-6"><a class="food_book1_img"  href="javascript:;"><img src="images/foodList_food8.jpg" alt="" /></a>
+					<p>亚洲风味酱汁排骨</p>
+					<div class="food_book1_time">
+						<span>45分钟        易</span>
+						<i class="is_ok2"></i>
+						<i class="is_ok2"></i>
+					</div>					
+				</li>
+				<li class="col-lg-4 col-md-6 col-sm-6 col-xs-6"><a class="food_book1_img"  href="recipes_page_2.html"><img src="images/foodList_food9.jpg" alt="" /></a>
+					<p>烤全鱼</p>
+					<div class="food_book1_time">
+						<span>30分钟        易</span>
+						<i class="is_ok2"></i>
+						<i class="is_ok2"></i>
+						<i class="is_ok2"></i>
+					</div>	
+				</li>
+				<li class="col-lg-4 col-md-6 col-sm-6 col-xs-6"><a  class="food_book1_img" href="javascript:;"><img src="images/foodList_food10.jpg" alt="" /></a>
+					<p>烤鸡块</p>
+					<div class="food_book1_time">
+						<span>30分钟        易</span>
+						<i class="is_ok2"></i>
+						<i class="is_ok2"></i>
+						<i class="is_ok2"></i>
+					</div>	
+				</li>
+				<li class="col-lg-4 col-md-6 col-sm-6 col-xs-6"><a  class="food_book1_img" href="recipes_page_1.html"><img src="images/foodList_food11.jpg" alt="" /></a>
+					<p>烤牛排配阿根廷辣酱</p>
+					<div class="food_book1_time">
+						<span>45分钟        易</span>
+						<i class="is_ok2"></i>
+						<i class="is_ok2"></i>
+					</div>	
+				</li>
+				<li class="col-lg-4 col-md-6 col-sm-6 col-xs-6"><a class="food_book1_img"  href="javascript:;"><img src="images/foodList_food12.jpg" alt="" /></a>
+					<p>烤卡蒙贝尔奶酪</p>
+					<div class="food_book1_time">
+						<span>30分钟        易</span>
+						<i class="is_ok2"></i>
+						<i class="is_ok2"></i>
+						<i class="is_ok2"></i>
+					</div>	
+				</li>
+			</ul>
+		</div>		
+		<div class="food_book3">
+			<h4 class="food_book_title"><i class="recipes_title_icon3"></i>推荐菜谱</h4>
+			<ul class="food_book1_list container">
+				<li class="col-lg-4 col-md-6 col-sm-6 col-xs-6"><a class="food_book1_img" href="recipes_page_4.html"><img src="images/foodList_food19.jpg" alt="" /></a>
+					<p>烧巧克力香蕉</p>
+					<div class="food_book1_time">
+						<span>30分钟        易</span>
+						<i class="is_ok3"></i>
+						<i class="is_ok3"></i>
+						<i class="is_ok3"></i>
+					</div>
+				</li>
+				<li class="col-lg-4 col-md-6 col-sm-6 col-xs-6"><a class="food_book1_img"  href="javascript:;"><img src="images/foodList_food14.jpg" alt="" /></a>
+					<p>亚洲风味酱汁排骨</p>
+					<div class="food_book1_time">
+						<span>45分钟        易</span>
+						<i class="is_ok3"></i>
+						<i class="is_ok3"></i>
+					</div>					
+				</li>
+				<li class="col-lg-4 col-md-6 col-sm-6 col-xs-6"><a class="food_book1_img"  href="recipes_page_2.html"><img src="images/foodList_food15.jpg" alt="" /></a>
+					<p>烤全鱼</p>
+					<div class="food_book1_time">
+						<span>30分钟        易</span>
+						<i class="is_ok3"></i>
+						<i class="is_ok3"></i>
+						<i class="is_ok3"></i>
+					</div>	
+				</li>
+				<li class="col-lg-4 col-md-6 col-sm-6 col-xs-6"><a  class="food_book1_img" href="javascript:;"><img src="images/foodList_food16.jpg" alt="" /></a>
+					<p>烤鸡块</p>
+					<div class="food_book1_time">
+						<span>30分钟        易</span>
+						<i class="is_ok3"></i>
+						<i class="is_ok3"></i>
+						<i class="is_ok3"></i>
+					</div>	
+				</li>
+				<li class="col-lg-4 col-md-6 col-sm-6 col-xs-6"><a  class="food_book1_img" href="recipes_page_1.html"><img src="images/foodList_food17.jpg" alt="" /></a>
+					<p>烤牛排配阿根廷辣酱</p>
+					<div class="food_book1_time">
+						<span>45分钟        易</span>
+						<i class="is_ok3"></i>
+						<i class="is_ok3"></i>
+					</div>	
+				</li>
+				<li class="col-lg-4 col-md-6 col-sm-6 col-xs-6"><a class="food_book1_img"  href="javascript:;"><img src="images/foodList_food18.jpg" alt="" /></a>
+					<p>烤卡蒙贝尔奶酪</p>
+					<div class="food_book1_time">
+						<span>30分钟        易</span>
+						<i class="is_ok3"></i>
+						<i class="is_ok3"></i>
+						<i class="is_ok3"></i>
+					</div>	
+				</li>
+			</ul>
+		</div>		
+		<div class="food_book4">
+			<h4 class="food_book_title"><i class="recipes_title_icon4"></i>推荐菜谱</h4>
+			<ul class="food_book1_list container">
+				<li class="col-lg-4 col-md-6 col-sm-6 col-xs-6"><a class="food_book1_img" href="recipes_page_4.html"><img src="images/foodList_food19.jpg" alt="" /></a>
+					<p>烧巧克力香蕉</p>
+					<div class="food_book1_time">
+						<span>30分钟        易</span>
+						<i class="is_ok4"></i>
+						<i class="is_ok4"></i>
+						<i class="is_ok4"></i>
+					</div>
+				</li>
+				<li class="col-lg-4 col-md-6 col-sm-6 col-xs-6"><a class="food_book1_img"  href="javascript:;"><img src="images/foodList_food20.jpg" alt="" /></a>
+					<p>亚洲风味酱汁排骨</p>
+					<div class="food_book1_time">
+						<span>45分钟        易</span>
+						<i class="is_ok4"></i>
+						<i class="is_ok4"></i>
+					</div>					
+				</li>
+				<li class="col-lg-4 col-md-6 col-sm-6 col-xs-6"><a class="food_book1_img"  href="recipes_page_2.html"><img src="images/foodList_food21.jpg" alt="" /></a>
+					<p>烤全鱼</p>
+					<div class="food_book1_time">
+						<span>30分钟        易</span>
+						<i class="is_ok4"></i>
+						<i class="is_ok4"></i>
+						<i class="is_ok4"></i>
+					</div>	
+				</li>
+				<li class="col-lg-4 col-md-6 col-sm-6 col-xs-6"><a  class="food_book1_img" href="javascript:;"><img src="images/foodList_food22.jpg" alt="" /></a>
+					<p>烤鸡块</p>
+					<div class="food_book1_time">
+						<span>30分钟        易</span>
+						<i class="is_ok4"></i>
+						<i class="is_ok4"></i>
+						<i class="is_ok4"></i>
+					</div>	
+				</li>
+				<li class="col-lg-4 col-md-6 col-sm-6 col-xs-6"><a  class="food_book1_img" href="recipes_page_1.html"><img src="images/foodList_food5.jpg" alt="" /></a>
+					<p>烤牛排配阿根廷辣酱</p>
+					<div class="food_book1_time">
+						<span>45分钟        易</span>
+						<i class="is_ok4"></i>
+						<i class="is_ok4"></i>
+					</div>	
+				</li>
+				<li class="col-lg-4 col-md-6 col-sm-6 col-xs-6"><a class="food_book1_img"  href="javascript:;"><img src="images/foodList_food6.jpg" alt="" /></a>
+					<p>烤卡蒙贝尔奶酪</p>
+					<div class="food_book1_time">
+						<span>30分钟        易</span>
+						<i class="is_ok4"></i>
+						<i class="is_ok4"></i>
+						<i class="is_ok4"></i>
+					</div>	
+				</li>
+			</ul>
+		</div>			
+		
+		<div class="bottom_logo"><img src="images/index_logo.png"/>
+					<p>Copyright © Primitive. All rights reserved</p>
+		</div>	
+		
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.fullPage.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/my.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+		/*REM*/
+			~function(){
+				var desW = 1920,
+					desW2 = 1200,
+					winW = document.documentElement.clientWidth||document.body.clientWidth;	
+					
+						if(winW <= 800){						
+							document.documentElement.style.fontSize = winW / 200 * 100 + 'px';
+							
+						}else if(winW <= 1200){
+							 var swiper = new Swiper('.swiper-container', {
+						        pagination: '.swiper-pagination',
+						         slidesPerView: 1,
+						         centeredSlides:true,
+						        autoplayDisableOnInteraction : false,
+						        paginationClickable: true,
+						        pagination: {
+							        el: '.swiper-pagination',
+							        clickable: true,
+							      },
+						        loop:true
+						    });
+
+							document.documentElement.style.fontSize = winW / 800 * 100 + 'px';					
+						}else{
+								 var swiper = new Swiper('.swiper-container', {
+						        pagination: '.swiper-pagination',
+						         slidesPerView: 3,
+						         centeredSlides:true,
+						        autoplayDisableOnInteraction : false,
+						        paginationClickable: true,
+						       	pagination: {
+								        el: '.swiper-pagination',
+								        clickable: true,
+								      },
+						        loop:true
+						    });						
+							document.documentElement.style.fontSize = winW / desW * 100 + 'px';							
+						}
+				}();
+			//swiper
+
+
+		</script>			
+	</body>
+</html>

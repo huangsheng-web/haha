@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/animate.min.css"/>		
+		<link rel="stylesheet" type="text/css" href="css/my.css"/>
+		<style type="text/css">
+			.product_part1,.product_part3{
+				width: 100%;
+				height: 100%;
+				background: #EEEEEE;
+				padding-top: 0.74rem;
+			}
+			.product_part2{
+				width: 100%;
+				height: 100%;
+				padding-top: 0.74rem;
+			}		
+			.bottom_logo{
+				height: 2rem;
+				text-align: center;
+			}	
+			.bottom_logo img{
+				margin-top: .5rem;
+			}
+			.part1_main{
+				width: 12rem;
+				height: 100%;
+				margin: 0 auto;
+			}
+			.part1_main_top,.part1_main_bottom{
+				height: 46%;
+				margin-top: .28rem;
+			}
+			.part1_type{
+				width: 3.7rem;
+				height: 100%;
+				background: url(images/product1_img4.jpg)no-repeat;
+				background-size: cover;
+				background-position: center;
+				margin-right: .38rem;
+				float: left;
+			}
+			.part1_type a{
+				display: block;
+				color: #8ac400;
+				font-size: .18rem;
+				width: 1.5rem;
+				height: .5rem;
+				border: 1px solid #8ac400;
+				border-radius: .2rem;
+				text-align: center;
+				line-height: .5rem;
+				margin: 3rem auto 0 auto;
+				text-decoration: none;
+			}
+			.part1_type a:hover{
+				background: #8ac400;
+				color: #FFFFFF;
+			}
+			.part1_bg{
+				width: 7.8rem;
+				height: 100%;
+				background: url(images/product1_bg.jpg)no-repeat;
+				background-size: cover;
+				background-position: center;
+				float: left;
+			}
+			.part1_list{
+				width: 3.7rem;
+				float: left;
+			}
+			.part1_list_active{
+				margin: 0 .38rem;
+			}
+			.part1_list_img{
+				width: 100%;
+				height: 2.7rem;
+				
+			}
+			.part1_list_img img{
+				width: 100%;
+				height: 100%;
+			}
+			.part1_list_des{
+				width: 100%;
+				height: 1rem;
+				padding-top: .28rem;
+			}
+			.part1_list_des_mes,.part1_list_des_btn{
+				display: inline-block;
+			}
+			.part1_list_des_mes{
+				width: 2.18rem;
+				height: 100%;
+				float: left;
+			}
+			.part1_list_des_mes p{
+				line-height: .26rem;
+			}
+			.part1_list_des_btn{
+				width: 1.32rem;
+				height: .5rem;
+				float: right;
+			}
+			.part1_list_des_btn a{
+				display: block;
+				width: 1.32rem;
+				height: .4rem;
+				background:#8ac400;
+				border-radius: .2rem;
+				text-align: center;
+				line-height: .4rem;	
+				text-decoration: none;
+				color: #FFFFFF;			
+			}
+			.part1_type:nth-of-type(2){
+				background: url(images/product2_img4.jpg)no-repeat;
+				background-size: cover;
+				background-position: center;				
+			}
+			.part3_type{
+				background: url(images/product3_img4.jpg)no-repeat;
+				background-size: cover;
+				background-position: center;				
+			}			
+			.part2_bg{
+				background: url(images/product2_bg.jpg)no-repeat;
+				background-size: cover;
+				background-position: center;		
+				margin-right: .38rem;			
+			}
+			.part3_bg{
+				background: url(images/product3_bg.jpg)no-repeat;
+				background-size: cover;
+				background-position: center;						
+			}
+			.wProduct_part1{
+				background: url(images/wProduct1_bg.jpg)no-repeat;
+				background-size: cover;
+				background-position: center;				
+			}
+			.wProduct_part2{
+				background: url(images/wProduct1_bg2.jpg)no-repeat;
+				background-size: cover;
+				background-position: center;				
+			}	
+			.wProduct_part3{
+				background: url(images/wProduct1_bg3.jpg)no-repeat;
+				background-size: cover;
+				background-position: center;				
+			}					
+			@media only screen and (min-width: 325px) and (max-width: 980px) {
+				.part1_main_bottom{
+					width: 100%;
+					height: 100%;
+				}
+				.product_part1,.product_part2,.product_part3{
+					padding-top: 0;
+				}
+				.part1_main{
+					width: 100%;
+					height: 100%;
+				}
+				.part1_list{
+					width: 48%;
+					height: 48%;
+					margin: 1%;
+					background: #FFFFFF;
+				}
+				.part1_type{
+					width: 100%;
+					margin-right: 0; 
+				}
+				.part1_type a{
+					margin: 4rem auto 0 auto;
+					width: 2.3rem;
+					height: .7rem;
+					font-size: .28rem;
+					line-height: .7rem;
+					border-radius: .3rem;
+				}
+				.part1_list_img{
+					height: 50%;
+				}
+				.part1_list_des_mes{
+					width: 100%;
+					height: 1.3rem;
+					font-size: .33rem;
+				}
+				.part1_list_des_mes p{
+					line-height: .4rem;
+   				 	text-align: center;
+				}
+				.part1_list_des_btn{
+					width: 100%;
+					height: .7rem;
+				}
+				.part1_list_des_btn a{
+					width: 2.3rem;
+					height: .7rem;
+					font-size: .28rem;
+					line-height: .7rem;
+					border-radius: .3rem;
+					margin: 0 auto;					
+				}
+				.bottom_logo img{
+					width: 2rem;
+				}	
+				.bottom_logo p{
+					font-size: .34rem;
+				}		
+				.part2_type{
+					background: url(images/product2_img5.jpg)no-repeat;
+					background-size: cover;
+					background-position: center;						
+				}		
+			}
+		</style>		
+	</head>
+	<body>
+		<header class="main-nav hidden-md hidden-sm">
+			<div class="main-nav-logo"><img style="vertical-align: middle;width: 80%;height: auto;" src="images/brand_logo.png"/></div>
+			<ul>
+					<li><a href="product.html?page=0">烧烤炉</a></li>
+					<li><a href="product.html?page=1">烧烤配件</a></li>
+					<li><a href="product.html?page=2">户外用品</a></li>
+					<li><a href="skills.html">技巧</a></li>
+					<li><a href="recipes.html">食谱</a></li>
+					<li><a href="brand.html">品牌</a></li>
+					<li><a href="mallLink.html">商城</a></li>
+					<li><a href="contact.html">联系我们</a></li>	
+			</ul>
+		</header>		
+		<div class="wap_nav hidden-lg">
+			<div class="wap_nav_link">
+				<div class="wap_nav_logo"></div>
+				<div class="handle"></div>
+				<div class="handle"></div>
+				<div class="handle"></div>
+			</div>
+			<div class="wap_nav_list">
+				<ul>
+					<li><a href="product.html?page=0">烧烤炉</a></li>
+					<li><a href="product.html?page=1">烧烤配件</a></li>
+					<li><a href="product.html?page=2">户外用品</a></li>
+					<li><a href="skills.html">技巧</a></li>
+					<li><a href="recipes.html">食谱</a></li>
+					<li><a href="brand.html">品牌</a></li>
+					<li><a href="mallLink.html">商城</a></li>
+					<li><a href="contact.html">联系我们</a></li>	
+				</ul>
+			</div>
+		</div>		
+		<div class="" id="dowebok1">
+			
+			<div class="section">
+				<div class="product_part1 hidden-md hidden-sm hidden-xs">
+					<div class="part1_main ">
+						<div class="part1_main_top">
+							<div class="part1_type">
+								<a href="mallLink.html">MORE</a>
+							</div>
+							<div class="part1_bg hidden-md hidden-sm hidden-xs"></div>
+						</div>
+						<div class="part1_main_bottom">
+							<div class="part1_list">
+								<div class="part1_list_img">
+									<img src="images/product1_img2.jpg"/>
+								</div>
+								<div class="part1_list_des">
+									<div class="part1_list_des_mes">
+										<p>5人以上铝合金木炭烧烤炉子</p>
+										<p>¥198.00起</p>
+									</div>
+									<div class="part1_list_des_btn">
+										<a href="mallLink.html">立即购买</a>
+									</div>
+								</div>
+							</div>
+							<div class="part1_list part1_list_active">
+								<div class="part1_list_img">
+									<img src="images/product1_img3.jpg"/>
+								</div>
+								<div class="part1_list_des">
+									<div class="part1_list_des_mes">
+										<p>不锈钢折叠大号木炭烧烤炉子</p>
+										<p>¥98.00起</p>
+									</div>
+									<div class="part1_list_des_btn">
+										<a href="mallLink.html">立即购买</a>
+									</div>
+								</div>								
+							</div>
+							<div class="part1_list">
+								<div class="part1_list_img">
+									<img src="images/product1_img1.jpg"/>
+								</div>
+								<div class="part1_list_des">
+									<div class="part1_list_des_mes">
+										<p>可折叠木炭3-5人木炭烧烤炉子</p>
+										<p>¥38.00起</p>
+									</div>
+									<div class="part1_list_des_btn">
+										<a href="product_detail3.html">立即购买</a>
+									</div>
+								</div>								
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="product_part1 hidden-lg">
+					<div class="part1_main ">
+							<div class="part1_list col-md-6 col-sm-6 col-xs-6">
+								<div class="part1_type">
+									<a href="mallLink.html">MORE</a>
+								</div>								
+							</div>
+							<div class="part1_list col-md-6 col-sm-6 col-xs-6">
+								<div class="part1_list_img">
+									<img src="images/product1_img2.jpg"/>
+								</div>
+								<div class="part1_list_des">
+									<div class="part1_list_des_mes">
+										<p>5人以上铝合金木炭烧烤炉子</p>
+										<p>¥198.00起</p>
+									</div>
+									<div class="part1_list_des_btn">
+										<a href="mallLink.html">立即购买</a>
+									</div>
+								</div>
+							</div>
+							<div class="part1_list  col-md-6 col-sm-6 col-xs-6">
+								<div class="part1_list_img">
+									<img src="images/product1_img3.jpg"/>
+								</div>
+								<div class="part1_list_des">
+									<div class="part1_list_des_mes">
+										<p>不锈钢折叠大号木炭烧烤炉子</p>
+										<p>¥98.00起</p>
+									</div>
+									<div class="part1_list_des_btn">
+										<a href="mallLink.html">立即购买</a>
+									</div>
+								</div>								
+							</div>
+							<div class="part1_list col-md-6 col-sm-6 col-xs-6">
+								<div class="part1_list_img">
+									<img src="images/product1_img1.jpg"/>
+								</div>
+								<div class="part1_list_des">
+									<div class="part1_list_des_mes">
+										<p>可折叠木炭3-5人木炭烧烤炉子</p>
+										<p>¥38.00起</p>
+									</div>
+									<div class="part1_list_des_btn">
+										<a href="mallLink.html">立即购买</a>
+									</div>
+								</div>								
+							</div>
+					</div>
+				</div>				
+			</div>
+			<div class="section"id="sect2">
+				<div class="product_part2 hidden-md hidden-sm hidden-xs">
+					<div class="part1_main">
+
+						<div class="part1_main_bottom">
+							<div class="part1_list">
+								<div class="part1_list_img">
+									<img src="images/product2_img1.jpg"/>
+								</div>
+								<div class="part1_list_des">
+									<div class="part1_list_des_mes">
+										<p>5人以上铝合金木炭烧烤炉子</p>
+										<p>¥198.00起</p>
+									</div>
+									<div class="part1_list_des_btn">
+										<a href="mallLink.html">立即购买</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="part1_type part1_list_active">
+								<a href="">MORE</a>
+							</div>
+							<div class="part1_list">
+								<div class="part1_list_img">
+									<img src="images/product2_img2.jpg"/>
+								</div>
+								<div class="part1_list_des">
+									<div class="part1_list_des_mes">
+										<p>可折叠木炭3-5人木炭烧烤炉子</p>
+										<p>¥38.00起</p>
+									</div>
+									<div class="part1_list_des_btn">
+										<a href="mallLink.html">立即购买</a>
+									</div>
+								</div>								
+							</div>
+						</div>
+						<div class="part1_main_top">
+							
+							<div class="part1_bg part2_bg"></div>
+							
+							<div class="part1_list">
+								<div class="part1_list_img">
+									<img src="images/product2_img3.jpg"/>
+								</div>
+								<div class="part1_list_des">
+									<div class="part1_list_des_mes">
+										<p>不锈钢折叠大号木炭烧烤炉子</p>
+										<p>¥98.00起</p>
+									</div>
+									<div class="part1_list_des_btn">
+										<a href="mallLink.html">立即购买</a>
+									</div>
+								</div>								
+							</div>							
+						</div>						
+					</div>					
+				</div>	
+				<div class="product_part1 hidden-lg">
+					<div class="part1_main ">
+							<div class="part1_list col-md-6 col-sm-6 col-xs-6">
+								<div class="part1_type part2_type">
+									<a href="">MORE</a>
+								</div>								
+							</div>
+							<div class="part1_list col-md-6 col-sm-6 col-xs-6">
+								<div class="part1_list_img">
+									<img src="images/product2_img8.jpg"/>
+								</div>
+								<div class="part1_list_des">
+									<div class="part1_list_des_mes">
+										<p>5人以上铝合金木炭烧烤炉子</p>
+										<p>¥198.00起</p>
+									</div>
+									<div class="part1_list_des_btn">
+										<a href="mallLink.html">立即购买</a>
+									</div>
+								</div>
+							</div>
+							<div class="part1_list  col-md-6 col-sm-6 col-xs-6">
+								<div class="part1_list_img">
+									<img src="images/product2_img6.jpg"/>
+								</div>
+								<div class="part1_list_des">
+									<div class="part1_list_des_mes">
+										<p>不锈钢折叠大号木炭烧烤炉子</p>
+										<p>¥98.00起</p>
+									</div>
+									<div class="part1_list_des_btn">
+										<a href="mallLink.html">立即购买</a>
+									</div>
+								</div>								
+							</div>
+							<div class="part1_list col-md-6 col-sm-6 col-xs-6">
+								<div class="part1_list_img">
+									<img src="images/product2_img7.jpg"/>
+								</div>
+								<div class="part1_list_des">
+									<div class="part1_list_des_mes">
+										<p>可折叠木炭3-5人木炭烧烤炉子</p>
+										<p>¥38.00起</p>
+									</div>
+									<div class="part1_list_des_btn">
+										<a href="mallLink.html">立即购买</a>
+									</div>
+								</div>								
+							</div>
+					</div>
+				</div>					
+			</div>
+			<div class="section"id="sect3">
+				<div class="product_part3 hidden-md hidden-sm hidden-xs">
+					<div class="part1_main">
+						<div class="part1_main_top">
+							<div class="part1_type part3_type">
+								<a href="">MORE</a>
+							</div>
+							<div class="part1_bg part3_bg"></div>
+						</div>
+						<div class="part1_main_bottom">
+							<div class="part1_list">
+								<div class="part1_list_img">
+									<img src="images/product3_img1.jpg"/>
+								</div>
+								<div class="part1_list_des">
+									<div class="part1_list_des_mes">
+										<p>5人以上铝合金木炭烧烤炉子</p>
+										<p>¥198.00起</p>
+									</div>
+									<div class="part1_list_des_btn">
+										<a href="mallLink.html">立即购买</a>
+									</div>
+								</div>
+							</div>
+							<div class="part1_list part1_list_active">
+								<div class="part1_list_img">
+									<img src="images/product3_img2.jpg"/>
+								</div>
+								<div class="part1_list_des">
+									<div class="part1_list_des_mes">
+										<p>不锈钢折叠大号木炭烧烤炉子</p>
+										<p>¥98.00起</p>
+									</div>
+									<div class="part1_list_des_btn">
+										<a href="mallLink.html">立即购买</a>
+									</div>
+								</div>								
+							</div>
+							<div class="part1_list">
+								<div class="part1_list_img">
+									<img src="images/product3_img3.jpg"/>
+								</div>
+								<div class="part1_list_des">
+									<div class="part1_list_des_mes">
+										<p>可折叠木炭3-5人木炭烧烤炉子</p>
+										<p>¥38.00起</p>
+									</div>
+									<div class="part1_list_des_btn">
+										<a href="mallLink.html">立即购买</a>
+									</div>
+								</div>								
+							</div>
+						</div>
+					</div>					
+				</div>
+				<div class="product_part1 hidden-lg">
+					<div class="part1_main ">
+							<div class="part1_list col-md-6 col-sm-6 col-xs-6">
+								<div class="part1_type part3_type">
+									<a href="">MORE</a>
+								</div>								
+							</div>
+							<div class="part1_list col-md-6 col-sm-6 col-xs-6">
+								<div class="part1_list_img">
+									<img src="images/product3_img1.jpg"/>
+								</div>
+								<div class="part1_list_des">
+									<div class="part1_list_des_mes">
+										<p>5人以上铝合金木炭烧烤炉子</p>
+										<p>¥198.00起</p>
+									</div>
+									<div class="part1_list_des_btn">
+										<a href="mallLink.html">立即购买</a>
+									</div>
+								</div>
+							</div>
+							<div class="part1_list  col-md-6 col-sm-6 col-xs-6">
+								<div class="part1_list_img">
+									<img src="images/product3_img2.jpg"/>
+								</div>
+								<div class="part1_list_des">
+									<div class="part1_list_des_mes">
+										<p>不锈钢折叠大号木炭烧烤炉子</p>
+										<p>¥98.00起</p>
+									</div>
+									<div class="part1_list_des_btn">
+										<a href="mallLink.html">立即购买</a>
+									</div>
+								</div>								
+							</div>
+							<div class="part1_list col-md-6 col-sm-6 col-xs-6">
+								<div class="part1_list_img">
+									<img src="images/product3_img3.jpg"/>
+								</div>
+								<div class="part1_list_des">
+									<div class="part1_list_des_mes">
+										<p>可折叠木炭3-5人木炭烧烤炉子</p>
+										<p>¥38.00起</p>
+									</div>
+									<div class="part1_list_des_btn">
+										<a href="mallLink.html">立即购买</a>
+									</div>
+								</div>								
+							</div>
+					</div>
+				</div>					
+			</div>
+			<div class="bottom_logo section"><img src="images/index_logo.png"/>
+					<p>Copyright © Primitive. All rights reserved</p>
+			</div>	
+		</div>
+
+		
+		
+		
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.fullPage.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/my.js" type="text/javascript" charset="utf-8"></script>	
+		<script type="text/javascript">
+		/*REM*/
+			~function(){
+				var desW = 1920,
+					desW2 = 1200,
+					winW = document.documentElement.clientWidth||document.body.clientWidth;	
+					
+						if(winW <= 800){						
+							document.documentElement.style.fontSize = winW / 200 * 100 + 'px';
+							
+						}else if(winW <= 1200){
+							
+							document.documentElement.style.fontSize = winW / 800 * 100 + 'px';	
+							$('#dowebok1').prepend('<div class="section hidden-lg wProduct_part1"></div>');
+							$('#sect2').before('<div class="section hidden-lg wProduct_part2"></div>');
+							$('#sect3').before('<div class="section hidden-lg wProduct_part3"></div>');
+						}else{
+							document.documentElement.style.fontSize = winW / desW * 100 + 'px';							
+						}
+						
+						
+				}();
+			/*判断传参*/
+			function GetRequest() {
+			   var url = location.search; //获取url中"?"符后的字串
+			   var theRequest = new Object();
+			   if (url.indexOf("?") != -1) {
+			      var str = url.substr(1);
+			      strs = str.split("&");
+			      for(var i = 0; i < strs.length; i ++) {
+			         theRequest[strs[i].split("=")[0]]=unescape(strs[i].split("=")[1]);
+			      }
+			   }
+			   return theRequest
+			 }
+			var page  = GetRequest().page;
+			$('.section').eq(page).addClass('active');
+			/**/		
+			$('#dowebok1').fullpage();
+		</script>		
+	</body>
+</html>

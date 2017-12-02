@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/animate.min.css"/>		
+		<link rel="stylesheet" type="text/css" href="css/my.css"/>	
+		<link rel="stylesheet" type="text/css" href="css/swiper-3.4.2.min.css"/>
+		<style type="text/css">
+			.setup_banner{
+				width: 100%;
+				height: 7.6rem;
+				background: url(images/camp_skills_banner1.jpg)no-repeat;
+				background-size: cover;
+				background-position: center;
+			}
+			.hMask{
+				display: block;
+				height: .74rem;
+			}
+			.recipes_des{
+				width: 100%;
+			    height: auto;
+			    padding: .7rem;
+			}
+			.recipes_des p{
+				text-align: center;
+				font-family: simhei;
+				font-size: .24rem;
+				line-height: .5rem;
+			}
+			.food_book1,.food_book2,.food_book3,.food_book4{
+				width: 10.34rem;
+				height: 9.7rem;
+				margin: 0 auto;
+			}
+			.food_book_title{
+				text-align: center;
+				font-size: .36rem;
+				margin-bottom: .4rem;
+			}
+			.recipes_title_icon1,.recipes_title_icon2,.recipes_title_icon3,.recipes_title_icon4{
+				display: inline-block;
+				width: .6rem;
+				height: .46rem;
+				margin-right: .1rem;
+				background: url(images/lajiao_icon.jpg)no-repeat;
+				background-position: center;
+				background-size: cover;
+			}
+			.recipes_title_icon2{
+				background: url(images/bull_icon.jpg)no-repeat;
+			}
+			.recipes_title_icon3{
+				background: url(images/fish_icon.jpg)no-repeat;
+			}
+			.recipes_title_icon4{
+				background: url(images/qiezi_icon.jpg)no-repeat;
+			}						
+			.food_book1_list{
+				width: 100%;
+				height: auto;
+			}
+			.food_book1_list li{
+				margin-bottom: .2rem;
+			}
+			.food_book1_list li p{
+				text-align: center;
+				font-family: simhei;
+				font-size: .26rem;
+				line-height: .6rem;
+			}
+			.food_book1_time{
+				width: 100%;
+				height: .5rem;
+				line-height: .5rem;
+				font-size: .22rem;
+				text-align: center;
+			}
+				
+			.food_book1_img{
+				width: 100%;
+				height: 100%;
+				display: block;
+			}
+			.food_book1_img img{
+				width: 100%;
+				height: auto;
+			}
+			.bottom_logo{
+				text-align: center;
+				padding: .4rem 0;
+				clear: both;
+			}
+			.skills_icon1{
+				display: inline-block;
+				width: .92rem;
+				height: .76rem;
+				margin-right: .1rem;
+				background: url(images/camp_skills_icon1.png)no-repeat;
+				background-position: center;
+				background-size: cover;				
+			}		
+			.skills_title{
+				display: inline-block;
+				
+			}	
+			.skills_title p{
+				font-size: .39rem;
+			}		
+			.skills_title span{
+				font-size: .20rem;
+				color: #7C7C7C;
+			}		
+			@media only screen and (min-width: 325px) and (max-width: 980px) {
+				.food_book1,.food_book2,.food_book3,.food_book4{
+					width: 100%;
+				}
+				.setup_banner{
+					height: 5.6rem;
+				}
+			}			
+			
+		</style>
+	</head>
+	<body>
+		<header class="main-nav hidden-md hidden-sm">
+			<div class="main-nav-logo"><img style="vertical-align: middle;width: 80%;height: auto;" src="images/brand_logo.png"/></div>
+			<ul>
+					<li><a href="product.html?page=0">烧烤炉</a></li>
+					<li><a href="product.html?page=1">烧烤配件</a></li>
+					<li><a href="product.html?page=2">户外用品</a></li>
+					<li><a href="skills.html">技巧</a></li>
+					<li><a href="recipes.html">食谱</a></li>
+					<li><a href="brand.html">品牌</a></li>
+					<li><a href="mallLink.html">商城</a></li>
+					<li><a href="contact.html">联系我们</a></li>	
+			</ul>
+		</header>		
+		<div class="wap_nav hidden-lg">
+			<div class="wap_nav_link">
+				<div class="wap_nav_logo"></div>
+				<div class="handle"></div>
+				<div class="handle"></div>
+				<div class="handle"></div>
+			</div>
+			<div class="wap_nav_list">
+				<ul>
+					<li><a href="product.html?page=0">烧烤炉</a></li>
+					<li><a href="product.html?page=1">烧烤配件</a></li>
+					<li><a href="product.html?page=2">户外用品</a></li>
+					<li><a href="skills.html">技巧</a></li>
+					<li><a href="recipes.html">食谱</a></li>
+					<li><a href="brand.html">品牌</a></li>
+					<li><a href="mallLink.html">商城</a></li>
+					<li><a href="contact.html">联系我们</a></li>	
+				</ul>
+			</div>
+		</div>		
+		<div class="hMask hidden-md hidden-sm hidden-xs"></div>
+		<div class="setup_banner"></div>
+		<div class="food_book1">
+			<h4 class="food_book_title"><i class="skills_icon1"></i>
+				<div class="skills_title">
+					<p>野营技巧</p>
+					<span>CAMPING SKILLS</span>
+				</div>
+			</h4>
+			<ul class="food_book1_list container">
+				<li class="col-lg-4 col-md-6 col-sm-6 col-xs-6"><a class="food_book1_img" href="skills_detail2.html"><img src="images/camp_skills_bg1.jpg" alt="" /></a>
+					<p>驱蚊迷思 </p>
+				</li>
+				<li class="col-lg-4 col-md-6 col-sm-6 col-xs-6"><a class="food_book1_img"  href="javascript:;"><img src="images/camp_skills_bg2.jpg" alt="" /></a>
+					<p>急救箱内的东西 </p>			
+				</li>
+				<li class="col-lg-4 col-md-6 col-sm-6 col-xs-6"><a class="food_book1_img"  href="skills_detail1.html"><img src="images/camp_skills_bg3.jpg" alt="" /></a>
+					<p>防暑大作战 </p>
+				</li>
+				<li class="col-lg-4 col-md-6 col-sm-6 col-xs-6"><a  class="food_book1_img" href="javascript:;"><img src="images/camp_skills_bg4.jpg" alt="" /></a>
+					<p>怎样避免脚部受伤 </p>
+				</li>
+				<li class="col-lg-4 col-md-6 col-sm-6 col-xs-6"><a  class="food_book1_img" href="javascript:;"><img src="images/camp_skills_bg5.jpg" alt="" /></a>
+					<p>如何预防及保护 </p>
+				</li>
+				<li class="col-lg-4 col-md-6 col-sm-6 col-xs-6"><a class="food_book1_img"  href="skills_detail3.html"><img src="images/camp_skills_bg6.jpg" alt="" /></a>
+					<p>抗蚊大做战 </p>
+				</li>
+			</ul>
+		</div>
+		
+		<div class="bottom_logo"><img src="images/index_logo.png"/>
+					<p>Copyright © Primitive. All rights reserved</p>
+		</div>	
+		
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.fullPage.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/my.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/swiper-3.4.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+		/*REM*/
+			~function(){
+				var desW = 1920,
+					desW2 = 1200,
+					winW = document.documentElement.clientWidth||document.body.clientWidth;	
+					
+						if(winW <= 800){						
+							document.documentElement.style.fontSize = winW / 200 * 100 + 'px';
+							
+						}else if(winW <= 1200){
+							 var swiper = new Swiper('.swiper-container', {
+						        pagination: '.swiper-pagination',
+						         slidesPerView: 1,
+						         centeredSlides:true,
+						        autoplayDisableOnInteraction : false,
+						        paginationClickable: true,
+						        loop:true
+						    });
+							document.documentElement.style.fontSize = winW / 800 * 100 + 'px';					
+						}else{
+								 var swiper = new Swiper('.swiper-container', {
+						        pagination: '.swiper-pagination',
+						         slidesPerView: 3,
+						         centeredSlides:true,
+						        autoplayDisableOnInteraction : false,
+						        paginationClickable: true,
+						        loop:true
+						    });						
+							document.documentElement.style.fontSize = winW / desW * 100 + 'px';							
+						}
+				}();
+			//swiper
+
+
+		</script>			
+	</body>
+</html>

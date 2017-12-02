@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/animate.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/my.css"/>
+		<style type="text/css">
+			.brand_banner{
+				width: 100%;
+				height: 9.7rem;
+				background: url(images/brand_banner1.jpg)no-repeat;
+				background-size: cover;
+				background-position: center;
+			}	
+			.brand_content{
+				width: 100%;
+				height: 13rem;
+			}	
+			.brand_main{
+				width: 100%;
+				height: 100%;
+			}
+			.brand_main_1,.brand_main_2{
+				width: 100%;
+				height: 50%;
+				display: none;
+			}
+			.brand_main_1 .brand_main_img{
+				width: 5.28rem;
+				height: 5.28rem;
+				margin-top: .61rem;
+				background: url(images/brand_list1_1.png)no-repeat;
+				background-size: 76% 76%;
+				background-position: center;
+			}
+			.brand_main_1 .brand_main_des{
+				width: 5.28rem;
+				height: 5.28rem;
+				margin-top: 1.9rem;
+   				 line-height: .5rem;	
+			}
+			.brand_main_2 .brand_main_des{
+				width: 5.28rem;
+				height: 5.28rem;
+				margin-top: 1rem;
+   				 line-height: .5rem;			
+			}			
+			.brand_main_2 .brand_main_img{
+				width: 5.28rem;
+				height: 5.28rem;
+				margin-top: .61rem;
+				background: url(images/brand_list2_1.png)no-repeat;
+				background-size: 76% 76%;
+				background-position: center;
+			}		
+			.brand_main_img img{
+				width: 100%;
+				height: 100%;
+				transform: rotate(-45deg);
+				transition: all 1s;
+			}	
+			.brand_main_img .active{
+				transform: rotate(0deg);
+			}
+			.brand_main_2{
+				background: #edefed;
+			}	
+			.brand_main_des h5{
+				width:4.3rem;
+				height:1.04rem;
+				background: url(images/brand00.jpg)no-repeat;
+				background-size: cover;
+				display: none;
+			}
+			.brand_main_des p{
+				font-size: .26rem;
+				text-align: left;
+				display: none;
+			}	
+			.brand_main_2 .brand_main_des h5{
+				background: url(images/brand11.png)no-repeat;
+				background-size: cover;
+			}			
+			.brand_main_2 .brand_main_des p{
+			}
+			.brand_footer{
+			    width: 100%;
+			    height: 9.7rem;
+			    padding-top: 1.8rem;
+			    background: url(images/brand_bg_3.jpg)no-repeat;
+			    background-size: cover;
+			    background-position: center;
+
+			}		
+			.brand_footer p{
+				text-align: center;
+				font-family: simsun;
+				font-size: .36rem;
+				line-height: .6rem;
+				letter-spacing: .09rem;
+			}
+			@media only screen and (min-width: 325px) and (max-width: 980px) {
+				.brand_content{
+					width: 100%;
+					height: 22rem;
+				}	
+				.brand_footer p{
+					text-align: center;
+					font-family: simsun;
+					font-size: .36rem;
+					line-height: .6rem;
+					letter-spacing: .04rem;
+				}	
+				.brand_main_des p{
+					font-size: .28rem;
+					text-align: center;
+					display: none;
+				}		
+				.brand_main_des h5{
+					background: url(images/brand02.jpg)no-repeat;
+					margin-bottom: .2rem;
+					margin-left: .2rem;
+					display: none;
+				}
+				.brand_main_1 .brand_main_des,.brand_main_2 .brand_main_des{
+					width: 5.28rem;
+					height: 5.28rem;
+					margin-top: 0rem;
+	   				line-height: .6rem;	
+				}
+				.brand_main_2 .brand_main_des h5{
+					background: url(images/brand12.png)no-repeat;
+					margin-bottom: .2rem;
+					margin-left: .2rem;
+				}			
+				.brand_main_2 .brand_main_des p{
+					text-indent: 0;
+				}
+				.bottom_logo img {
+			   	 	width: 2rem;
+				}
+				.bottom_logo p {
+				    font-size: .34rem;
+				}
+				.brand_footer p{
+					font-size: .3rem;
+				}																
+			}
+		</style>
+	</head>
+	<body>
+		<header class="main-nav hidden-md hidden-sm">
+			<div class="main-nav-logo"><img style="vertical-align: middle;width: 80%;height: auto;" src="images/brand_logo.jpg"/></div>
+			<ul>
+				<ul class="linkList">
+					<li><a href="product.html?page=0">烧烤炉</a></li>
+					<li><a href="product.html?page=1">烧烤配件</a></li>
+					<li><a href="product.html?page=2">户外用品</a></li>
+					<li><a href="skills.html">技巧</a></li>
+					<li><a href="recipes.html">食谱</a></li>
+					<li><a href="brand.html">品牌</a></li>
+					<li><a href="mallLink.html">商城</a></li>
+					<li><a href="contact.html">联系我们</a></li>							
+				</ul>
+			</ul>
+		</header>		
+		<div class="wap_nav hidden-lg">
+			<div class="wap_nav_link">
+				<div class="wap_nav_logo"></div>
+				<div class="handle"></div>
+				<div class="handle"></div>
+				<div class="handle"></div>
+			</div>
+			<div class="wap_nav_list">
+				<ul class="linkList">
+					<li><a href="product.html?page=0">烧烤炉</a></li>
+					<li><a href="product.html?page=1">烧烤配件</a></li>
+					<li><a href="product.html?page=2">户外用品</a></li>
+					<li><a href="skills.html">技巧</a></li>
+					<li><a href="recipes.html">食谱</a></li>
+					<li><a href="brand.html">品牌</a></li>
+					<li><a href="mallLink.html">商城</a></li>
+					<li><a href="contact.html">联系我们</a></li>								
+				</ul>
+			</div>
+		</div>			
+		<div class="brand_banner"></div>
+		<div class="brand_content">
+			<ul class="brand_main">
+				<li class="brand_main_1 container hidden-md hidden-sm hidden-xs">
+						<div class="brand_main_img col-lg-3 col-lg-offset-3 col-md-10 col-md-offset-2 col-sm-10 col-sm-offset-2 col-xs-10 col-xs-offset-2">
+							<img class="" src="images/brand_list1_2.png"/>
+						</div>
+						<div class="brand_main_des col-lg-3  col-md-10 col-sm-10  col-xs-10 ">
+							<h5 class=" animated"></h5>
+							<p class="animated">原始人，专注烧烤领域已有10年。    </p>
+							<p class="animated">主推烧烤架，烧烤配件，调味料，</p>
+							<p class="animated">户外用品等各类优质商品。</p>
+						</div>						
+				</li>
+				<li class="brand_main_2 container hidden-md hidden-sm hidden-xs">
+						<div class="brand_main_des col-lg-3 col-lg-offset-3 ">
+							<h5  class="animated "></h5>
+							<p class="animated ">我们遵循： </p>
+							<p class="animated ">1.烧烤的纯粹口味</p>
+							<p class="animated ">2.聚会的纯粹快乐</p>		
+							<p class="animated ">3.烹饪的纯粹满足 </p>
+							<p class="animated ">4.探索的纯粹自由  </p>							    
+						</div>
+						<div class="brand_main_img col-lg-3 ">
+							<img class="" src="images/brand_list2_2.png"/>
+						</div>						
+				</li>
+				<li class="brand_main_1 container hidden-lg">
+						<div class="brand_main_img  wBrand_img col-lg-offset-3 col-md-10 col-md-offset-2 col-sm-10 col-sm-offset-2 col-xs-10 col-xs-offset-2">
+							<img class="" src="images/brand_list1_2.png"/>
+						</div>
+						<div class="brand_main_des col-lg-3  col-md-10 col-md-offset-2 col-sm-10 col-sm-offset-2  col-xs-10 col-md-offset-2">
+							<h5 class="animated "></h5>
+							<p class="animated">原始人，专注烧烤领域已有10年。    </p>
+							<p class="animated">主推烧烤架，烧烤配件，调味料，</p>
+							<p class="animated">户外用品等各类优质商品。</p>
+						</div>						
+				</li>				
+				<li class="brand_main_2 container hidden-lg">
+						<div class="brand_main_img wBrand_img  col-md-10 col-md-offset-2 col-sm-10 col-sm-offset-2 col-xs-10 col-xs-offset-2">
+							<img class="" src="images/brand_list2_2.png"/>
+						</div>							
+						<div class="brand_main_des  col-lg-offset-3  col-md-10 col-md-offset-2 col-sm-10 col-sm-offset-2 col-xs-10 col-xs-offset-2">
+							<h5  class="animated "></h5>
+							<p class="animated ">我们遵循： </p>
+							<p class="animated ">1.烧烤的纯粹口味</p>
+							<p class="animated ">2.聚会的纯粹快乐</p>		
+							<p class="animated ">3.烹饪的纯粹满足 </p>
+							<p class="animated ">4.探索的纯粹自由  </p>							    
+						</div>
+				
+				</li>				
+			</ul>
+		</div>
+		<div class="brand_footer">
+			<p>我们不断优化产品，探寻烧烤乐趣的边界。 </p>
+			<p>为用户打造最简单，最快乐的烧烤活动，</p>
+			<p>是我们不断前行的动力。</p>
+
+		</div>
+		<div class="bottom_logo"><img src="images/index_logo.png"/>
+				<p>Copyright © Primitive. All rights reserved</p>
+	</div>		
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.fullPage.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/my.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+		/*REM*/
+			~function(){
+				var desW = 1920,
+					desW2 = 1200,
+					winW = document.documentElement.clientWidth||document.body.clientWidth;	
+					
+						if(winW <= 800){						
+							document.documentElement.style.fontSize = winW / 200 * 100 + 'px';
+							
+						}else if(winW <= 1200){
+
+							document.documentElement.style.fontSize = winW / 800 * 100 + 'px';					
+						}else{
+							document.documentElement.style.fontSize = winW / desW * 100 + 'px';							
+						}
+				}();
+		/**/	
+		
+
+			$(window).scroll(function(){
+			var srollPos = $(window).scrollTop();
+			var totalheight = parseFloat($(window).height()) + parseFloat(srollPos); 
+				if(totalheight>=parseFloat($(window).height())*1.2){
+					$('.brand_main_1').fadeIn(300,function(){
+						$('.brand_main_img').eq(0).find('img').addClass('active');
+						$('.wBrand_img').eq(0).find('img').addClass('active');
+						$('.brand_main_des h5').show().addClass('fadeInUp');
+						for(var i=0;i<$('.brand_main_1 p').length;i++){
+							(function(a){
+								setTimeout(function(){
+									$('.brand_main_1 p').eq(a).show().addClass('fadeInUp')
+								},a*800)
+								
+							})(i)
+						}
+					});
+				};
+				if(totalheight>=parseFloat($(window).height())*1.8){
+					$('.brand_main_2').fadeIn(300,function(){
+						$('.brand_main_img').eq(1).find('img').addClass('active');	
+						$('.wBrand_img').eq(1).find('img').addClass('active');
+						$('.brand_main_des h5').show().addClass('fadeInUp');
+						for(var i=0;i<$('.brand_main_2 p').length;i++){
+							(function(a){
+								setTimeout(function(){
+									$('.brand_main_2 p').eq(a).show().addClass('fadeInUp')
+								},a*800)
+								
+							})(i)
+						}
+					});
+				}				
+			})
+		</script>		
+	</body>
+</html>

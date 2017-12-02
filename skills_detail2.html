@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/animate.min.css"/>		
+		<link rel="stylesheet" type="text/css" href="css/my.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper-3.4.2.min.css"/>
+		
+		<style type="text/css">
+			.mallLink_banner{
+				width: 15rem;
+				height: 8rem;
+				float: left;
+			}
+			.mallLink_banner_img{
+				width: 100%;
+				height: 100%;
+				background: url(images/mall_link_banner1.jpg)no-repeat;
+				background-size: cover;
+				background-position: center;				
+			}
+			.mallLink_main{
+				width: 100%;
+				height: 8rem;
+				padding-top: .74rem;
+			}
+			.mallLink_links{
+				width: 4.2rem;
+				height: 8rem;
+				float: left;
+			}
+			.mallLink_links ul{
+				width: 100%;
+				height: 100%;
+			}
+			.mallLink_links ul li{
+				width: 100%;
+				height: 2rem;
+				text-align: center;
+			}
+			.mallLink_links ul li a{
+				width: 100%;
+				height: 100%;
+				display: block;
+			}
+			.mallLink_links ul li a:hover{
+				background: #eeeeee;
+			}
+			.mallLink_links ul li a img{
+				width: 100%;
+				height: 100%;
+				vertical-align:middle;
+			}
+			.skills_detail_title{
+				width: 100%;
+				clear: both;
+			}
+			.skills_detail_title h5{
+				font-size: .36rem;
+			}
+			.skills_detail_title p{
+				font-size: .24rem;
+				line-height: .5rem;
+				
+			}		
+			.skills_detail_title,.skills_detail_main{
+				width: 6.3rem;
+			    padding:.1rem .3rem;
+			    margin-left: 5.2rem;
+			}
+			.skills_detail_des{
+				width: 100%;
+				height: 1.24rem;
+				padding-top: .24rem;
+				font-size: .18rem;
+				color: #505050;
+				border-top: 1px dotted #7C7C7C;
+				border-bottom: 1px dotted #7C7C7C;
+				letter-spacing: 1px;
+    			line-height: .24rem;
+			}
+			.skills_detail_misi{
+				width: 100%;
+				
+			}
+			.skills_detail_misi h4{
+				font-size: .24rem;
+				color: #505050;
+				line-height: .6rem;
+				font-weight: 600;
+			}
+			.skills_detail_misi h5 ,.skills_detail_misi p{
+				font-size: .18rem;
+				color: #505050;
+			}
+			.skills_detail_misi h5{
+				font-weight: 600;
+				line-height: .43rem;
+			}
+			.skills_detail_misi p{
+				line-height: .24rem;
+				margin-bottom: .24rem;
+			}
+			.food_book1_list{
+				width: 100%;
+				height: auto;
+			}
+			.food_book1_list li{
+				margin-bottom: .2rem;
+			}
+			.food_book1_list li p{
+				text-align: center;
+				font-family: simhei;
+				font-size: .26rem;
+				line-height: .6rem;
+			}
+				
+			.food_book1_img{
+				width: 100%;
+				height: 100%;
+				display: block;
+			}
+			.food_book1_img img{
+				width: 100%;
+				height: auto;
+			}			
+			@media only screen and (min-width: 325px) and (max-width: 980px) {
+				.page_banner{
+					width: 100%;
+					padding:0 .3rem;
+				}
+				.page_banner_main{
+					width: 100%;
+				}
+				.page_banner_img{
+					width: 100%;
+				}
+				.skills_detail_title{
+					width: 100%;
+					margin-left: 0;
+				}
+				.skills_detail_title h5{
+					font-size: .7rem;
+					margin-top: 1.4rem;
+				}
+				.skills_detail_title p{
+					font-size: .4rem;
+					line-height: 1.1rem;
+				}
+				.skills_detail_main{
+					width: 100%;
+					margin-left: 0;
+				}
+				.skills_detail_des{
+					font-size: .3rem;
+					height: 2.4rem;
+					line-height: .5rem;
+					border-bottom: 2px dotted #7C7C7C;	
+					padding-bottom: .2rem;				
+				}
+				.skills_detail_misi h4{		
+					font-size: .48rem;
+					line-height: 1.2rem;
+					font-weight: normal;
+				}
+				.skills_detail_misi h5,.skills_usefull h5{
+					font-size: .4rem;
+					line-height: 1.2rem;
+				}
+				.skills_detail_misi p,.skills_usefull p{
+					font-size: .3rem;
+					line-height: .5rem;
+					color: #505050;
+				}	
+				.bottom_logo img{
+					width: 2rem;
+				}	
+				.bottom_logo p{
+					font-size: .34rem;
+				}		
+				.food_book1_list li p{
+					font-size: .4rem;
+				}		
+				.skills_title{
+					font-size: .4rem;
+					line-height: 1.4rem;
+					margin-top: .4rem;
+				}				
+			}	
+		</style>		
+	</head>
+	<body>
+		<header class="main-nav hidden-md hidden-sm">
+			<div class="main-nav-logo"><img style="vertical-align: middle;width: 80%;height: auto;" src="images/brand_logo.png"/></div>
+			<ul>
+					<li><a href="product.html?page=0">烧烤炉</a></li>
+					<li><a href="product.html?page=1">烧烤配件</a></li>
+					<li><a href="product.html?page=2">户外用品</a></li>
+					<li><a href="skills.html">技巧</a></li>
+					<li><a href="recipes.html">食谱</a></li>
+					<li><a href="brand.html">品牌</a></li>
+					<li><a href="mallLink.html">商城</a></li>
+					<li><a href="contact.html">联系我们</a></li>	
+			</ul>
+		</header>		
+		<div class="wap_nav hidden-lg">
+			<div class="wap_nav_link">
+				<div class="wap_nav_logo"></div>
+				<div class="handle"></div>
+				<div class="handle"></div>
+				<div class="handle"></div>
+			</div>
+			<div class="wap_nav_list">
+				<ul>
+					<li><a href="product.html?page=0">烧烤炉</a></li>
+					<li><a href="product.html?page=1">烧烤配件</a></li>
+					<li><a href="product.html?page=2">户外用品</a></li>
+					<li><a href="skills.html">技巧</a></li>
+					<li><a href="recipes.html">食谱</a></li>
+					<li><a href="brand.html">品牌</a></li>
+					<li><a href="mallLink.html">商城</a></li>
+					<li><a href="contact.html">联系我们</a></li>	
+				</ul>
+			</div>
+		</div>		
+	    <div class="skills_detail_title hidden-lg">
+			<h5>驱蚊迷思</h5>
+			<p>户外叮咛</p>			    	
+	    </div>		
+		<div class="page_banner">
+			<div class="page_banner_main">
+				<div class="page_banner_img">
+					<img src="images/camp_skillsInside_bg1.jpg"/>
+				</div>
+			</div>
+			<div class="page_banner_tap hidden-md hidden-sm hidden-xs">
+				<p class="page_banner_tap_title">更多美味创意</p>
+				<ul>
+					<li><a href="javascript:;"><img src="images/camp_skills_bg2.jpg" alt="" /></a>
+						<span>急救箱内的东西</span>
+					</li>
+					<li><a href="skills_detail1.html"><img src="images/camp_skills_bg3.jpg" alt="" /></a>
+						<span>防暑大作战</span>
+					</li>
+					<li><a href="javascript:;"><img src="images/camp_skills_bg4.jpg" alt="" /></a>
+						<span>怎样避免脚部受伤</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	    <div class="skills_detail_title hidden-md hidden-sm hidden-xs">
+			<h5>驱蚊迷思</h5>
+			<p>户外叮咛</p>			    	
+	    </div>
+		<div class="skills_detail_main">
+			<div class="skills_detail_des">
+				露营时，总被蚊子叮得满身包；该擦些什么，才能有效驱蚊呢？常见的 驱蚊迷思，及真正有效的驱蚊妙方！户外露营，别再傻傻被叮成「红豆」啦！
+			</div>
+			<div class="skills_detail_misi">
+				<h4>驱蚊三大迷思</h4>
+				<h5>迷思一：捕蚊灯 </h5>
+				<p>精油研究显示，蚊子及其他叮咬昆虫背传统捕蚊灯捕获的机率仅为1%， 且触电大都为飞蛾、果蝇、苍蝇等无害昆虫。</p>
+				<h5>迷思二：维生素B </h5>
+				<p>目前并无研究根据显示维生素B能驱蚊。</p>
+				<h5>迷思三：香茅 </h5>
+				<p>香茅的驱蚊效果，只能维持3〜10分钟，是非常微弱的驱蚊剂。</p>				
+			</div>
+			<div class="skills_usefull hidden-lg">
+				<h5>有效的驱蚊剂 </h5>
+				<p>薄荷油：研究表显示，薄荷油驱蚊效果达85％，且能有效杀死蚊子幼虫。杜虹花（紫珠属）：为一种自然的驱虫剂，对于驱赶蚊子非常有效。猫薄荷：研究指出，猫薄荷中所提炼出的纯荆芥内酯，具有比DEET（防蚊液）高出10倍驱蚊的效果。</p>
+			</div>
+			<div class="food_book1 hidden-lg">
+				<h4 class="food_book_title"><i class="skills_icon1"></i>
+					<div class="skills_title">
+						<p>更多野营技巧</p>
+					</div>
+				</h4>
+				<ul class="food_book1_list container">
+					<li class="col-lg-4 col-md-6 col-sm-6 col-xs-6"><a class="food_book1_img" href=""><img src="images/camp_skills_bg1.jpg" alt="" /></a>
+						<p>驱蚊迷思 </p>
+					</li>
+					<li class="col-lg-4 col-md-6 col-sm-6 col-xs-6"><a class="food_book1_img"  href=""><img src="images/camp_skills_bg2.jpg" alt="" /></a>
+						<p>急救箱内的东西 </p>			
+					</li>
+					<li class="col-lg-4 col-md-6 col-sm-6 col-xs-6"><a class="food_book1_img"  href=""><img src="images/camp_skills_bg3.jpg" alt="" /></a>
+						<p>防暑大作战 </p>
+					</li>
+					<li class="col-lg-4 col-md-6 col-sm-6 col-xs-6"><a  class="food_book1_img" href=""><img src="images/camp_skills_bg4.jpg" alt="" /></a>
+						<p>怎样避免脚部受伤 </p>
+					</li>
+					<li class="col-lg-4 col-md-6 col-sm-6 col-xs-6"><a  class="food_book1_img" href=""><img src="images/camp_skills_bg5.jpg" alt="" /></a>
+						<p>如何预防及保护 </p>
+					</li>
+					<li class="col-lg-4 col-md-6 col-sm-6 col-xs-6"><a class="food_book1_img"  href=""><img src="images/camp_skills_bg6.jpg" alt="" /></a>
+						<p>抗蚊大做战 </p>
+					</li>
+				</ul>
+			</div>			
+		</div>
+		<div class="bottom_logo">
+			<img src="images/index_logo.png"/>
+			<p>Copyright © Primitive. All rights reserved</p>
+		</div>	
+		
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.fullPage.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script src="js/my.js" type="text/javascript" charset="utf-8"></script>	
+		<script src="js/swiper-3.4.2.min.js" type="text/javascript" charset="utf-8"></script>		
+		<script type="text/javascript">
+		/*REM*/
+			~function(){
+				var desW = 1920,
+					desW2 = 1200,
+					winW = document.documentElement.clientWidth||document.body.clientWidth;	
+					
+						if(winW <= 800){						
+							document.documentElement.style.fontSize = winW / 200 * 100 + 'px';
+							
+						}else if(winW <= 1200){
+
+							document.documentElement.style.fontSize = winW / 800 * 100 + 'px';					
+						}else{
+							document.documentElement.style.fontSize = winW / desW * 100 + 'px';							
+						}
+				}();
+		/**/		
+		
+			 var swiper = new Swiper('.swiper-container', {
+		        pagination: '.swiper-pagination',
+		         slidesPerView: 1,
+		         centeredSlides:true,
+		        autoplayDisableOnInteraction : false,
+		        paginationClickable: true,
+		        loop:true
+		    });
+		</script>		
+	</body>
+</html>
