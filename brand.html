@@ -26,7 +26,7 @@
 			.brand_main_1,.brand_main_2{
 				width: 100%;
 				height: 50%;
-				display: none;
+				/*display: none;*/
 			}
 			.brand_main_1 .brand_main_img{
 				width: 5.28rem;
@@ -143,7 +143,7 @@
 			   	 	width: 2rem;
 				}
 				.bottom_logo p {
-				    font-size: .34rem;
+				    font-size: .28rem;
 				}
 				.brand_footer p{
 					font-size: .3rem;
@@ -248,7 +248,7 @@
 
 		</div>
 		<div class="bottom_logo"><img src="images/index_logo.png"/>
-				<p>Copyright © Primitive. All rights reserved</p>
+				<p>COPYRIGHT © PRIMITIVE. ALL RIGHTS RESERVED</p>
 	</div>		
 		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
@@ -272,12 +272,10 @@
 						}
 				}();
 		/**/	
-		
-
 			$(window).scroll(function(){
 			var srollPos = $(window).scrollTop();
 			var totalheight = parseFloat($(window).height()) + parseFloat(srollPos); 
-				if(totalheight>=parseFloat($(window).height())*1.2){
+				if(totalheight>=parseFloat($('.brand_main_1').eq(0).offset().top)){
 					$('.brand_main_1').fadeIn(300,function(){
 						$('.brand_main_img').eq(0).find('img').addClass('active');
 						$('.wBrand_img').eq(0).find('img').addClass('active');
@@ -292,7 +290,7 @@
 						}
 					});
 				};
-				if(totalheight>=parseFloat($(window).height())*1.8){
+				if(totalheight>=parseFloat($('.brand_main_1').eq(1).offset().top)){
 					$('.brand_main_2').fadeIn(300,function(){
 						$('.brand_main_img').eq(1).find('img').addClass('active');	
 						$('.wBrand_img').eq(1).find('img').addClass('active');
